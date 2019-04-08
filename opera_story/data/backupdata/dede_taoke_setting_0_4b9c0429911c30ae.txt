@@ -1,0 +1,1 @@
+INSERT INTO `dede_taoke_setting` VALUES('1','21253308','0e0d623722c6e53c54732cf7b6cc7b29','mm_10026097_0_0','','default','yuanxin','0','1','1','1');

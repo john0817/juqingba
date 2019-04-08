@@ -1,0 +1,5 @@
+INSERT INTO `dede_addonclient` VALUES('10','7','','','127.0.0.1','http://www.baidu.com');
+INSERT INTO `dede_addonclient` VALUES('11','7','','','127.0.0.1','http://www.baidu.com');
+INSERT INTO `dede_addonclient` VALUES('12','7','','','127.0.0.1','http://www.baidu.com');
+INSERT INTO `dede_addonclient` VALUES('13','7','','','127.0.0.1','http://www.baidu.com');
+INSERT INTO `dede_addonclient` VALUES('14','7','','','127.0.0.1','http://www.baidu.com');

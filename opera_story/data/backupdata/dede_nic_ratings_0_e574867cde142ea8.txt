@@ -1,0 +1,2 @@
+INSERT INTO `dede_nic_ratings` VALUES('92','0','0','5','19');
+INSERT INTO `dede_nic_ratings` VALUES('106','0','0','4','15');

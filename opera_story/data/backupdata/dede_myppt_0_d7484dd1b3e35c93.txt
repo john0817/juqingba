@@ -1,0 +1,2 @@
+INSERT INTO `dede_myppt` VALUES('1','1','0','œ ª®','/style/banner02.png','');
+INSERT INTO `dede_myppt` VALUES('2','1','0','œ ª®Õ¯','/style/banner03.png','');

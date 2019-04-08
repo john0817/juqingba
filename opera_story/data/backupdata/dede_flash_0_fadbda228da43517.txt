@@ -1,0 +1,4 @@
+INSERT INTO `dede_flash` VALUES('1','1','http://www.cqfdsh.com','Í¼Æ¬Ãû³Æ1','','/uploads/flash/1206291022469287.png','1340936566','2');
+INSERT INTO `dede_flash` VALUES('2','1','http://www.cqfdsh.com','Í¼Æ¬Ãû³Æ2','','/uploads/flash/1206291023042898.png','1340936584','2');
+INSERT INTO `dede_flash` VALUES('3','1','http://www.cqfdsh.com','Í¼Æ¬Ãû³Æ3','','/uploads/flash/1206291023212897.png','1340936601','2');
+INSERT INTO `dede_flash` VALUES('4','1','http://www.cqfdsh.com','Í¼Æ¬Ãû³Æ4','','/uploads/flash/1206291023437588.png','1340936623','2');

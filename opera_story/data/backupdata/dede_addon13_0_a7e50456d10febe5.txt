@@ -1,0 +1,4 @@
+INSERT INTO `dede_addon13` VALUES('429','39','-13','0','1','0','英皇考级官网','1341891267','c,p','/uploads/121027/2-12102GH911437.jpg','183.12.150.194','0','0','0','0','http://www.abrsm.org/ch/regions/south-east-asia/china/');
+INSERT INTO `dede_addon13` VALUES('566','39','-13','0','2','0','皇家音乐学校','1351330082','c,p','/uploads/allimg/121027/2-12102GHJ90-L.jpg','113.87.142.158','0','0','0','0','http://www.rcm.ac.uk/');
+INSERT INTO `dede_addon13` VALUES('567','39','-13','0','2','0','皇家音乐学院','1351330563','c,p','/uploads/allimg/121027/2-12102GI5510-L.jpg','113.87.142.158','0','0','0','0','http://www.ram.ac.uk/');
+INSERT INTO `dede_addon13` VALUES('568','39','-13','0','2','0','南城酒店','1351331975','c,p','/uploads/121027/2-12102GP110433.jpg','113.87.142.158','0','0','0','0','http://www.yuinchi.jp/index.jsp');

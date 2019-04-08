@@ -1,0 +1,4448 @@
+DROP TABLE IF EXISTS `dede_about`;
+
+CREATE TABLE `dede_about` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `zw` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addcase`;
+
+CREATE TABLE `dede_addcase` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `language` varchar(250) NOT NULL DEFAULT '',
+  `vocation` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `website` varchar(250) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon117`;
+
+CREATE TABLE `dede_addon117` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `hdp` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon12`;
+
+CREATE TABLE `dede_addon12` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `jg` varchar(250) NOT NULL DEFAULT '',
+  `js` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon13`;
+
+CREATE TABLE `dede_addon13` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `channel` smallint(6) NOT NULL DEFAULT '0',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `click` int(10) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `senddate` int(11) NOT NULL DEFAULT '0',
+  `flag` set('c','h','p','f','s','j','a','b') DEFAULT NULL,
+  `litpic` varchar(60) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `lastpost` int(10) unsigned NOT NULL DEFAULT '0',
+  `scores` mediumint(8) NOT NULL DEFAULT '0',
+  `goodpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `badpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `linkurl` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addon14`;
+
+CREATE TABLE `dede_addon14` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `imgurl` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon15`;
+
+CREATE TABLE `dede_addon15` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `channel` smallint(6) NOT NULL DEFAULT '0',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `click` int(10) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `senddate` int(11) NOT NULL DEFAULT '0',
+  `flag` set('c','h','p','f','s','j','a','b') DEFAULT NULL,
+  `litpic` varchar(60) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `lastpost` int(10) unsigned NOT NULL DEFAULT '0',
+  `scores` mediumint(8) NOT NULL DEFAULT '0',
+  `goodpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `badpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon16`;
+
+CREATE TABLE `dede_addon16` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `ganyan` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon17`;
+
+CREATE TABLE `dede_addon17` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `kcml` varchar(250) NOT NULL DEFAULT '',
+  `spdz` varchar(250) NOT NULL DEFAULT '',
+  `image` varchar(250) NOT NULL DEFAULT '',
+  `jiangshi` varchar(250) NOT NULL DEFAULT '',
+  `shichang` varchar(250) NOT NULL DEFAULT '',
+  `piclink` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addon18`;
+
+CREATE TABLE `dede_addon18` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  `ljbt` varchar(250) NOT NULL DEFAULT '',
+  `ljdz` varchar(250) NOT NULL DEFAULT '',
+  `tplj` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon19`;
+
+CREATE TABLE `dede_addon19` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  `spdz` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon20`;
+
+CREATE TABLE `dede_addon20` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `jiage` varchar(250) NOT NULL DEFAULT '',
+  `qzlx` enum('个人旅游签','商务签','探亲') DEFAULT NULL,
+  `yxq` varchar(250) NOT NULL DEFAULT '',
+  `tlq` varchar(250) NOT NULL DEFAULT '',
+  `gzr` varchar(250) NOT NULL DEFAULT '',
+  `qzinfo` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon21`;
+
+CREATE TABLE `dede_addon21` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `ticket` varchar(250) NOT NULL DEFAULT '',
+  `weizhi` varchar(250) NOT NULL DEFAULT '',
+  `jddj` varchar(250) NOT NULL DEFAULT '',
+  `time` varchar(250) NOT NULL DEFAULT '',
+  `tese` varchar(250) NOT NULL DEFAULT '',
+  `jdjs` mediumtext,
+  `zn` mediumtext,
+  `tu1` varchar(250) NOT NULL DEFAULT '',
+  `tu2` varchar(250) NOT NULL DEFAULT '',
+  `tu3` varchar(250) NOT NULL DEFAULT '',
+  `tu4` varchar(250) NOT NULL DEFAULT '',
+  `tu5` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon22`;
+
+CREATE TABLE `dede_addon22` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `lianxiren` varchar(250) NOT NULL DEFAULT '',
+  `dianhua` varchar(250) NOT NULL DEFAULT '',
+  `dizhi` varchar(250) NOT NULL DEFAULT '',
+  `wdtjbody` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addon23`;
+
+CREATE TABLE `dede_addon23` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `jiayetel` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addon24`;
+
+CREATE TABLE `dede_addon24` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon25`;
+
+CREATE TABLE `dede_addon25` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `jiage` varchar(250) NOT NULL DEFAULT '',
+  `etjg` varchar(250) NOT NULL DEFAULT '',
+  `date` varchar(250) NOT NULL DEFAULT '',
+  `tese` mediumtext,
+  `one` varchar(250) NOT NULL DEFAULT '',
+  `oneinfo` mediumtext,
+  `onetu` varchar(250) NOT NULL DEFAULT '',
+  `two` varchar(250) NOT NULL DEFAULT '',
+  `twoinfo` mediumtext,
+  `twotu` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon26`;
+
+CREATE TABLE `dede_addon26` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `jiage` varchar(250) NOT NULL DEFAULT '',
+  `etjg` varchar(250) NOT NULL DEFAULT '',
+  `tese` mediumtext,
+  `one` varchar(250) NOT NULL DEFAULT '',
+  `onetu` varchar(250) NOT NULL DEFAULT '',
+  `oneinfo` mediumtext,
+  `two` varchar(250) NOT NULL DEFAULT '',
+  `twotu` varchar(250) NOT NULL DEFAULT '',
+  `twoinfo` mediumtext,
+  `three` varchar(250) NOT NULL DEFAULT '',
+  `threetu` varchar(250) NOT NULL DEFAULT '',
+  `threeinfo` mediumtext,
+  `four` varchar(250) NOT NULL DEFAULT '',
+  `fourtu` varchar(250) NOT NULL DEFAULT '',
+  `fourinfo` mediumtext,
+  `five` varchar(250) NOT NULL DEFAULT '',
+  `fivetu` varchar(250) NOT NULL DEFAULT '',
+  `fiveinfo` mediumtext,
+  `six` varchar(250) NOT NULL DEFAULT '',
+  `sixtu` varchar(250) NOT NULL DEFAULT '',
+  `sixinfo` mediumtext,
+  `seven` varchar(250) NOT NULL DEFAULT '',
+  `seventu` varchar(250) NOT NULL DEFAULT '',
+  `seveninfo` mediumtext,
+  `eight` varchar(250) NOT NULL DEFAULT '',
+  `eighttu` varchar(250) NOT NULL DEFAULT '',
+  `eightinfo` mediumtext,
+  `nine` varchar(250) NOT NULL DEFAULT '',
+  `ninetu` varchar(250) NOT NULL DEFAULT '',
+  `nineinfo` mediumtext,
+  `ten` varchar(250) NOT NULL DEFAULT '',
+  `tentu` varchar(250) NOT NULL DEFAULT '',
+  `teninfo` mediumtext,
+  `eleven` varchar(250) NOT NULL DEFAULT '',
+  `eleventu` varchar(250) NOT NULL DEFAULT '',
+  `eleveninfo` mediumtext,
+  `twelve` varchar(250) NOT NULL DEFAULT '',
+  `twelvetu` varchar(250) NOT NULL DEFAULT '',
+  `twelveinfo` mediumtext,
+  `thirteen` varchar(250) NOT NULL DEFAULT '',
+  `thirteentu` varchar(250) NOT NULL DEFAULT '',
+  `thirteeninfo` mediumtext,
+  `fourteen` varchar(250) NOT NULL DEFAULT '',
+  `fourteentu` varchar(250) NOT NULL DEFAULT '',
+  `fourteeninfo` mediumtext,
+  `fiveteen` varchar(250) NOT NULL DEFAULT '',
+  `fiveteentu` varchar(250) NOT NULL DEFAULT '',
+  `fiveteeninfo` mediumtext,
+  `ggy` mediumtext,
+  `mdd` varchar(250) NOT NULL DEFAULT '',
+  `fybh` mediumtext,
+  `wxts` mediumtext,
+  `sixteen` varchar(250) NOT NULL DEFAULT '',
+  `sixteentu` varchar(250) NOT NULL DEFAULT '',
+  `sixteeninfo` mediumtext,
+  `date` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon27`;
+
+CREATE TABLE `dede_addon27` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `chengshi` varchar(250) NOT NULL DEFAULT '',
+  `sheyingshi` mediumtext,
+  `huazhuangshi` mediumtext,
+  `liebiao_img` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon28`;
+
+CREATE TABLE `dede_addon28` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addon4417`;
+
+CREATE TABLE `dede_addon4417` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `zhicheng` varchar(250) NOT NULL DEFAULT '',
+  `nianxian` varchar(250) NOT NULL DEFAULT '',
+  `ganwu` mediumtext,
+  `grjj` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addonabout`;
+
+CREATE TABLE `dede_addonabout` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonad`;
+
+CREATE TABLE `dede_addonad` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `addlink` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addonarticle`;
+
+CREATE TABLE `dede_addonarticle` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonarticle17`;
+
+CREATE TABLE `dede_addonarticle17` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `music_url` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonarticle18`;
+
+CREATE TABLE `dede_addonarticle18` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `chanpintu` varchar(250) NOT NULL DEFAULT '',
+  `canshu` mediumtext,
+  `shipin` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonarticle7`;
+
+CREATE TABLE `dede_addonarticle7` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addonarticle8`;
+
+CREATE TABLE `dede_addonarticle8` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addonarticle_zj`;
+
+CREATE TABLE `dede_addonarticle_zj` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `seotitle` varchar(250) NOT NULL DEFAULT '',
+  `zhichen` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonarticleabout`;
+
+CREATE TABLE `dede_addonarticleabout` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonarticlecake`;
+
+CREATE TABLE `dede_addonarticlecake` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonarticleservice`;
+
+CREATE TABLE `dede_addonarticleservice` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addoncase`;
+
+CREATE TABLE `dede_addoncase` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `pagestyle` smallint(6) NOT NULL DEFAULT '1',
+  `maxwidth` smallint(6) NOT NULL DEFAULT '600',
+  `imgurls` text,
+  `row` smallint(6) NOT NULL DEFAULT '0',
+  `col` smallint(6) NOT NULL DEFAULT '0',
+  `isrm` smallint(6) NOT NULL DEFAULT '0',
+  `ddmaxwidth` smallint(6) NOT NULL DEFAULT '200',
+  `pagepicnum` smallint(6) NOT NULL DEFAULT '12',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `imagesMain` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonclient`;
+
+CREATE TABLE `dede_addonclient` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `gsurl` varchar(150) NOT NULL DEFAULT 'http://',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonfahao`;
+
+CREATE TABLE `dede_addonfahao` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `regurl` varchar(250) NOT NULL DEFAULT '',
+  `total` int(11) NOT NULL DEFAULT '0',
+  `remain` int(11) NOT NULL DEFAULT '0',
+  `cardinfo` mediumtext,
+  `ips` int(11) NOT NULL DEFAULT '0',
+  `ip` mediumtext,
+  `body` mediumtext,
+  `times` int(11) NOT NULL DEFAULT '0',
+  `gamename` varchar(250) NOT NULL DEFAULT '',
+  `intervals` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonflash`;
+
+CREATE TABLE `dede_addonflash` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `filesize` varchar(10) NOT NULL DEFAULT '',
+  `playtime` varchar(10) NOT NULL DEFAULT '',
+  `flashtype` varchar(10) NOT NULL DEFAULT '',
+  `flashrank` smallint(6) NOT NULL DEFAULT '0',
+  `width` smallint(6) NOT NULL DEFAULT '0',
+  `height` smallint(6) NOT NULL DEFAULT '0',
+  `flashurl` varchar(80) NOT NULL DEFAULT '',
+  `flashhh` varchar(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `flashMain` (`typeid`,`filesize`,`flashrank`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addongame`;
+
+CREATE TABLE `dede_addongame` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `operation` varchar(250) NOT NULL DEFAULT '',
+  `regurl` varchar(250) NOT NULL DEFAULT '',
+  `gfweb` varchar(250) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  `charact` mediumtext,
+  `date` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonhot`;
+
+CREATE TABLE `dede_addonhot` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `channel` smallint(6) NOT NULL DEFAULT '0',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `click` int(10) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `senddate` int(11) NOT NULL DEFAULT '0',
+  `flag` set('c','h','p','f','s','j','a','b') DEFAULT NULL,
+  `litpic` varchar(60) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `lastpost` int(10) unsigned NOT NULL DEFAULT '0',
+  `scores` mediumint(8) NOT NULL DEFAULT '0',
+  `goodpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `badpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `gameurl` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonimages`;
+
+CREATE TABLE `dede_addonimages` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `pagestyle` smallint(6) NOT NULL DEFAULT '1',
+  `maxwidth` smallint(6) NOT NULL DEFAULT '600',
+  `imgurls` text,
+  `row` smallint(6) NOT NULL DEFAULT '0',
+  `col` smallint(6) NOT NULL DEFAULT '0',
+  `isrm` smallint(6) NOT NULL DEFAULT '0',
+  `ddmaxwidth` smallint(6) NOT NULL DEFAULT '200',
+  `pagepicnum` smallint(6) NOT NULL DEFAULT '12',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `imagesMain` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonimages17`;
+
+CREATE TABLE `dede_addonimages17` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `pagestyle` smallint(6) NOT NULL DEFAULT '1',
+  `maxwidth` smallint(6) NOT NULL DEFAULT '600',
+  `imgurls` text,
+  `row` smallint(6) NOT NULL DEFAULT '0',
+  `col` smallint(6) NOT NULL DEFAULT '0',
+  `isrm` smallint(6) NOT NULL DEFAULT '0',
+  `ddmaxwidth` smallint(6) NOT NULL DEFAULT '200',
+  `pagepicnum` smallint(6) NOT NULL DEFAULT '12',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  `dizhi` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `imagesMain` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonimages20`;
+
+CREATE TABLE `dede_addonimages20` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `pagestyle` smallint(6) NOT NULL DEFAULT '1',
+  `maxwidth` smallint(6) NOT NULL DEFAULT '600',
+  `imgurls` text,
+  `row` smallint(6) NOT NULL DEFAULT '0',
+  `col` smallint(6) NOT NULL DEFAULT '0',
+  `isrm` smallint(6) NOT NULL DEFAULT '0',
+  `ddmaxwidth` smallint(6) NOT NULL DEFAULT '200',
+  `pagepicnum` smallint(6) NOT NULL DEFAULT '12',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  `tzwz` varchar(250) NOT NULL DEFAULT '',
+  `tzdz` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `imagesMain` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addonimages21`;
+
+CREATE TABLE `dede_addonimages21` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `pagestyle` smallint(6) NOT NULL DEFAULT '1',
+  `maxwidth` smallint(6) NOT NULL DEFAULT '600',
+  `imgurls` text,
+  `row` smallint(6) NOT NULL DEFAULT '0',
+  `col` smallint(6) NOT NULL DEFAULT '0',
+  `isrm` smallint(6) NOT NULL DEFAULT '0',
+  `ddmaxwidth` smallint(6) NOT NULL DEFAULT '200',
+  `pagepicnum` smallint(6) NOT NULL DEFAULT '12',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  `bigimg` varchar(250) NOT NULL DEFAULT '',
+  `enjs` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `imagesMain` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addoninfos`;
+
+CREATE TABLE `dede_addoninfos` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `channel` smallint(6) NOT NULL DEFAULT '0',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `click` int(10) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `litpic` varchar(60) NOT NULL DEFAULT '',
+  `userip` varchar(15) NOT NULL DEFAULT ' ',
+  `senddate` int(11) NOT NULL DEFAULT '0',
+  `flag` set('c','h','p','f','s','j','a','b') DEFAULT NULL,
+  `lastpost` int(10) unsigned NOT NULL DEFAULT '0',
+  `scores` mediumint(8) NOT NULL DEFAULT '0',
+  `goodpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `badpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `nativeplace` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `infotype` char(20) NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `endtime` int(11) NOT NULL DEFAULT '0',
+  `tel` varchar(50) NOT NULL DEFAULT '',
+  `email` varchar(50) NOT NULL DEFAULT '',
+  `address` varchar(100) NOT NULL DEFAULT '',
+  `linkman` varchar(50) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`,`nativeplace`,`infotype`),
+  KEY `channel` (`channel`,`arcrank`,`mid`,`click`,`title`,`litpic`,`senddate`,`flag`,`endtime`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonmovie`;
+
+CREATE TABLE `dede_addonmovie` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `authors` mediumtext,
+  `areas` varchar(60) NOT NULL DEFAULT '',
+  `murls` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addonmusic`;
+
+CREATE TABLE `dede_addonmusic` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `music_url` varchar(250) NOT NULL DEFAULT '',
+  `music_words` mediumtext,
+  `body` mediumtext,
+  `music` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonproduct`;
+
+CREATE TABLE `dede_addonproduct` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `assprice` float NOT NULL DEFAULT '0',
+  `msg` mediumtext NOT NULL,
+  `bigpic` varchar(200) NOT NULL DEFAULT '',
+  `model` varchar(100) NOT NULL DEFAULT '',
+  `sptype` varchar(10) NOT NULL DEFAULT '',
+  `cometime` int(11) NOT NULL DEFAULT '0',
+  `brand` varchar(30) NOT NULL DEFAULT '',
+  `size` varchar(50) NOT NULL DEFAULT '',
+  `stuff` varchar(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `dede_addonproduct_index` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonservice`;
+
+CREATE TABLE `dede_addonservice` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonservices`;
+
+CREATE TABLE `dede_addonservices` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonshop`;
+
+CREATE TABLE `dede_addonshop` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `price` float NOT NULL DEFAULT '0',
+  `trueprice` float NOT NULL DEFAULT '0',
+  `brand` varchar(250) NOT NULL DEFAULT '',
+  `units` varchar(250) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL,
+  `userip` char(15) NOT NULL,
+  `redirecturl` varchar(255) NOT NULL,
+  `vocation` char(20) NOT NULL DEFAULT '0',
+  `infotype` char(20) NOT NULL DEFAULT '0',
+  `uptime` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonshow`;
+
+CREATE TABLE `dede_addonshow` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addonsifu`;
+
+CREATE TABLE `dede_addonsifu` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `ip` varchar(250) NOT NULL DEFAULT '',
+  `kaiqu` varchar(250) NOT NULL DEFAULT '',
+  `xianlu` varchar(250) NOT NULL DEFAULT '',
+  `banben` mediumtext,
+  `qq` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonsingle`;
+
+CREATE TABLE `dede_addonsingle` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_addonsoft`;
+
+CREATE TABLE `dede_addonsoft` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `filetype` varchar(10) NOT NULL DEFAULT '',
+  `language` varchar(10) NOT NULL DEFAULT '',
+  `softtype` varchar(10) NOT NULL DEFAULT '',
+  `accredit` varchar(10) NOT NULL DEFAULT '',
+  `os` varchar(30) NOT NULL DEFAULT '',
+  `softrank` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `officialUrl` varchar(30) NOT NULL DEFAULT '',
+  `officialDemo` varchar(50) NOT NULL DEFAULT '',
+  `softsize` varchar(10) NOT NULL DEFAULT '',
+  `softlinks` text,
+  `introduce` text,
+  `daccess` smallint(5) NOT NULL DEFAULT '0',
+  `needmoney` smallint(5) NOT NULL DEFAULT '0',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `softMain` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonspec`;
+
+CREATE TABLE `dede_addonspec` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `note` text,
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonteacher`;
+
+CREATE TABLE `dede_addonteacher` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addontop`;
+
+CREATE TABLE `dede_addontop` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `channel` smallint(6) NOT NULL DEFAULT '0',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `click` int(10) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `senddate` int(11) NOT NULL DEFAULT '0',
+  `flag` set('c','h','p','f','s','j','a','b') DEFAULT NULL,
+  `litpic` varchar(60) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `lastpost` int(10) unsigned NOT NULL DEFAULT '0',
+  `scores` mediumint(8) NOT NULL DEFAULT '0',
+  `goodpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `badpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `gameurl` varchar(250) NOT NULL DEFAULT '',
+  `gametype` varchar(250) NOT NULL DEFAULT '',
+  `gameweb` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonvideo`;
+
+CREATE TABLE `dede_addonvideo` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  `video` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonxfcs`;
+
+CREATE TABLE `dede_addonxfcs` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  `szqy` enum('屯溪区','徽州区','歙 县','黄山区','休宁县','黟 县','祁门县','') DEFAULT NULL,
+  `fylx` enum('住 宅','商 铺','写字楼') DEFAULT NULL,
+  `fwhx` enum('三室两厅','一 居 室','一室一厅','两室一厅','两室两厅','三室一厅','四室一厅','四室两厅','复 式 楼','洋楼别墅','其他户型') DEFAULT NULL,
+  `ckjg` float NOT NULL DEFAULT '0',
+  `danwei` enum('万元/套','元/月') DEFAULT NULL,
+  `lpwz` varchar(250) NOT NULL DEFAULT '',
+  `wnsb` set('水','电','电话','宽带','有线','卫生间','厨房','阳台','车库','公交') DEFAULT NULL,
+  `jzmj` float NOT NULL DEFAULT '0',
+  `szlc` enum('1','2','3','4','5','6','7','8','9','10','11','12','13','14') DEFAULT NULL,
+  `gjc` enum('6','1','2','3','4','5','7','8','9','10','11','12','13','14') DEFAULT NULL,
+  `zxqk` enum('简单装修','毛 坯 房','中档装修','精 装 修','豪华装修') DEFAULT NULL,
+  `yxq` enum('一个月','三 天','一星期','半个月','一季度','半 年','') DEFAULT NULL,
+  `lxdh` varchar(250) NOT NULL DEFAULT '',
+  `sjhm` varchar(250) NOT NULL DEFAULT '',
+  `emdz` varchar(250) NOT NULL DEFAULT '',
+  `lxr` varchar(250) NOT NULL DEFAULT '',
+  `laiyuan` enum('中 介','个 人') DEFAULT NULL,
+  `fwpic` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonzhaopin`;
+
+CREATE TABLE `dede_addonzhaopin` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `zhiwei` varchar(250) NOT NULL DEFAULT '',
+  `didian` varchar(250) NOT NULL DEFAULT '',
+  `starttime` int(11) NOT NULL DEFAULT '0',
+  `overtime` int(11) NOT NULL DEFAULT '0',
+  `renshu` int(11) NOT NULL DEFAULT '0',
+  `xueli` varchar(250) NOT NULL DEFAULT '',
+  `nianling` varchar(250) NOT NULL DEFAULT '',
+  `gongzuonx` varchar(250) NOT NULL DEFAULT '',
+  `zhuanye` mediumtext,
+  `jineng` mediumtext,
+  `zhize` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_addonzyyy`;
+
+CREATE TABLE `dede_addonzyyy` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `wzdt` varchar(250) NOT NULL DEFAULT '',
+  `ybxt` varchar(250) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_admin`;
+
+CREATE TABLE `dede_admin` (
+  `id` int(10) unsigned NOT NULL,
+  `usertype` float unsigned DEFAULT '0',
+  `userid` char(30) NOT NULL DEFAULT '',
+  `pwd` char(32) NOT NULL DEFAULT '',
+  `uname` char(20) NOT NULL DEFAULT '',
+  `tname` char(30) NOT NULL DEFAULT '',
+  `email` char(30) NOT NULL DEFAULT '',
+  `typeid` text,
+  `logintime` int(10) unsigned NOT NULL DEFAULT '0',
+  `loginip` varchar(20) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_admintype`;
+
+CREATE TABLE `dede_admintype` (
+  `rank` float NOT NULL DEFAULT '1',
+  `typename` varchar(30) NOT NULL DEFAULT '',
+  `system` smallint(6) NOT NULL DEFAULT '0',
+  `purviews` text,
+  PRIMARY KEY (`rank`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_advancedsearch`;
+
+CREATE TABLE `dede_advancedsearch` (
+  `mid` int(11) NOT NULL,
+  `maintable` varchar(256) NOT NULL DEFAULT '',
+  `mainfields` text,
+  `addontable` varchar(256) DEFAULT NULL,
+  `addonfields` text,
+  `forms` text,
+  `template` varchar(256) NOT NULL DEFAULT '',
+  UNIQUE KEY `mid` (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_arcatt`;
+
+CREATE TABLE `dede_arcatt` (
+  `sortid` smallint(6) NOT NULL DEFAULT '0',
+  `att` char(10) NOT NULL DEFAULT '',
+  `attname` char(30) NOT NULL DEFAULT '',
+  PRIMARY KEY (`att`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_arccache`;
+
+CREATE TABLE `dede_arccache` (
+  `md5hash` char(32) NOT NULL DEFAULT '',
+  `uptime` int(11) NOT NULL DEFAULT '0',
+  `cachedata` mediumtext,
+  PRIMARY KEY (`md5hash`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_arccache_full`;
+
+CREATE TABLE `dede_arccache_full` (
+  `md5hash` varchar(32) NOT NULL,
+  `uptime` int(11) NOT NULL DEFAULT '0',
+  `cachedata` mediumtext NOT NULL,
+  PRIMARY KEY (`md5hash`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_archives`;
+
+CREATE TABLE `dede_archives` (
+  `id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `typeid2` varchar(90) NOT NULL DEFAULT '0',
+  `sortrank` int(10) unsigned NOT NULL DEFAULT '0',
+  `flag` set('c','h','p','f','s','j','a','b') DEFAULT NULL,
+  `ismake` smallint(6) NOT NULL DEFAULT '0',
+  `channel` smallint(6) NOT NULL DEFAULT '1',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `click` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `money` smallint(6) NOT NULL DEFAULT '0',
+  `title` char(60) NOT NULL DEFAULT '',
+  `shorttitle` char(36) NOT NULL DEFAULT '',
+  `color` char(7) NOT NULL DEFAULT '',
+  `writer` char(20) NOT NULL DEFAULT '',
+  `source` char(30) NOT NULL DEFAULT '',
+  `litpic` char(100) NOT NULL DEFAULT '',
+  `pubdate` int(10) unsigned NOT NULL DEFAULT '0',
+  `senddate` int(10) unsigned NOT NULL DEFAULT '0',
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `keywords` char(30) NOT NULL DEFAULT '',
+  `lastpost` int(10) unsigned NOT NULL DEFAULT '0',
+  `scores` mediumint(8) NOT NULL DEFAULT '0',
+  `goodpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `badpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `voteid` mediumint(8) NOT NULL,
+  `notpost` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `description` varchar(255) NOT NULL DEFAULT '',
+  `filename` varchar(40) NOT NULL DEFAULT '',
+  `dutyadmin` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `tackid` int(10) NOT NULL DEFAULT '0',
+  `mtype` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `weight` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `sortrank` (`sortrank`),
+  KEY `mainindex` (`arcrank`,`typeid`,`channel`,`flag`,`mid`),
+  KEY `lastpost` (`lastpost`,`scores`,`goodpost`,`badpost`,`notpost`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_archivesspec`;
+
+CREATE TABLE `dede_archivesspec` (
+  `ID` int(11) unsigned NOT NULL DEFAULT '0',
+  `typeid` int(11) unsigned NOT NULL DEFAULT '0',
+  `typeid2` int(11) unsigned NOT NULL DEFAULT '0',
+  `sortrank` int(11) NOT NULL DEFAULT '0',
+  `iscommend` smallint(6) NOT NULL DEFAULT '0',
+  `ismake` smallint(6) NOT NULL DEFAULT '0',
+  `channel` int(11) NOT NULL DEFAULT '1',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `click` int(11) unsigned NOT NULL DEFAULT '0',
+  `money` smallint(6) NOT NULL DEFAULT '0',
+  `title` varchar(80) NOT NULL DEFAULT '',
+  `shorttitle` varchar(36) NOT NULL DEFAULT '',
+  `color` varchar(10) NOT NULL DEFAULT '',
+  `writer` varchar(30) NOT NULL DEFAULT '',
+  `source` varchar(50) NOT NULL DEFAULT '',
+  `litpic` varchar(100) NOT NULL DEFAULT '',
+  `pubdate` int(11) NOT NULL DEFAULT '0',
+  `senddate` int(11) NOT NULL DEFAULT '0',
+  `arcatt` smallint(6) NOT NULL DEFAULT '0',
+  `adminID` int(11) NOT NULL DEFAULT '0',
+  `memberID` int(11) unsigned NOT NULL DEFAULT '0',
+  `description` varchar(250) NOT NULL DEFAULT '',
+  `keywords` varchar(60) NOT NULL DEFAULT '',
+  `templet` varchar(60) NOT NULL DEFAULT '',
+  `lastpost` int(11) NOT NULL DEFAULT '0',
+  `postnum` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(150) NOT NULL DEFAULT '',
+  `mtype` int(11) NOT NULL DEFAULT '0',
+  `userip` varchar(20) NOT NULL DEFAULT '',
+  `locklikeid` smallint(6) NOT NULL DEFAULT '0',
+  `likeid` varchar(240) DEFAULT '',
+  `smalltypeid` smallint(6) NOT NULL DEFAULT '0',
+  `areaid` smallint(6) NOT NULL DEFAULT '0',
+  `areaid2` smallint(6) NOT NULL DEFAULT '0',
+  `sectorid` smallint(6) NOT NULL DEFAULT '0',
+  `sectorid2` smallint(6) NOT NULL DEFAULT '0',
+  `endtime` int(11) NOT NULL DEFAULT '0',
+  `digg` int(11) NOT NULL DEFAULT '0',
+  `diggtime` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`ID`),
+  KEY `typeid` (`typeid`,`typeid2`,`sortrank`,`channel`,`arcrank`,`adminID`,`memberID`,`smalltypeid`,`areaid`,`areaid2`,`sectorid`,`sectorid2`,`senddate`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_arcmulti`;
+
+CREATE TABLE `dede_arcmulti` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `tagid` char(60) NOT NULL DEFAULT '',
+  `uptime` int(11) NOT NULL DEFAULT '0',
+  `innertext` varchar(255) NOT NULL DEFAULT '',
+  `pagesize` int(11) NOT NULL DEFAULT '0',
+  `arcids` text NOT NULL,
+  `ordersql` varchar(255) DEFAULT NULL,
+  `addfieldsSql` varchar(255) DEFAULT NULL,
+  `addfieldsSqlJoin` varchar(255) DEFAULT NULL,
+  `attstr` text,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_arcrank`;
+
+CREATE TABLE `dede_arcrank` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `rank` smallint(6) NOT NULL DEFAULT '0',
+  `membername` char(20) NOT NULL DEFAULT '',
+  `adminrank` smallint(6) NOT NULL DEFAULT '0',
+  `money` smallint(8) unsigned NOT NULL DEFAULT '500',
+  `scores` mediumint(8) NOT NULL DEFAULT '0',
+  `purviews` mediumtext,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_arctiny`;
+
+CREATE TABLE `dede_arctiny` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `typeid2` varchar(90) NOT NULL DEFAULT '0',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `channel` smallint(5) NOT NULL DEFAULT '1',
+  `senddate` int(10) unsigned NOT NULL DEFAULT '0',
+  `sortrank` int(10) unsigned NOT NULL DEFAULT '0',
+  `mid` mediumint(8) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `sortrank` (`sortrank`),
+  KEY `idx_typeid_arcrank_sortrank` (`typeid`,`arcrank`,`sortrank`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_arctype`;
+
+CREATE TABLE `dede_arctype` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `reid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `topid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `sortrank` smallint(5) unsigned NOT NULL DEFAULT '50',
+  `typename` char(30) NOT NULL DEFAULT '',
+  `typedir` char(60) NOT NULL DEFAULT '',
+  `isdefault` smallint(6) NOT NULL DEFAULT '0',
+  `defaultname` char(15) NOT NULL DEFAULT 'index.html',
+  `issend` smallint(6) NOT NULL DEFAULT '0',
+  `channeltype` smallint(6) DEFAULT '1',
+  `maxpage` smallint(6) NOT NULL DEFAULT '-1',
+  `ispart` smallint(6) NOT NULL DEFAULT '0',
+  `corank` smallint(6) NOT NULL DEFAULT '0',
+  `tempindex` char(50) NOT NULL DEFAULT '',
+  `templist` char(50) NOT NULL DEFAULT '',
+  `temparticle` char(50) NOT NULL DEFAULT '',
+  `namerule` char(50) NOT NULL DEFAULT '',
+  `namerule2` char(50) NOT NULL DEFAULT '',
+  `modname` char(20) NOT NULL DEFAULT '',
+  `description` char(150) NOT NULL DEFAULT '',
+  `keywords` varchar(60) NOT NULL DEFAULT '',
+  `seotitle` varchar(80) NOT NULL DEFAULT '',
+  `moresite` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `sitepath` char(60) NOT NULL DEFAULT '',
+  `siteurl` char(50) NOT NULL DEFAULT '',
+  `ishidden` smallint(6) NOT NULL DEFAULT '0',
+  `cross` tinyint(1) NOT NULL DEFAULT '0',
+  `crossid` text,
+  `content` text,
+  `smalltypes` text,
+  PRIMARY KEY (`id`),
+  KEY `reid` (`reid`,`isdefault`,`channeltype`,`ispart`,`corank`,`topid`,`ishidden`),
+  KEY `sortrank` (`sortrank`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_area`;
+
+CREATE TABLE `dede_area` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL DEFAULT '',
+  `reid` int(10) unsigned NOT NULL DEFAULT '0',
+  `disorder` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_ask`;
+
+CREATE TABLE `dede_ask` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `tid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `tidname` char(50) NOT NULL DEFAULT '',
+  `tid2` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `tid2name` char(50) NOT NULL DEFAULT '',
+  `uid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `anonymous` tinyint(1) NOT NULL DEFAULT '0',
+  `title` char(80) NOT NULL DEFAULT '',
+  `digest` tinyint(1) NOT NULL DEFAULT '0',
+  `reward` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `dateline` int(10) unsigned NOT NULL DEFAULT '0',
+  `expiredtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `solvetime` int(10) unsigned NOT NULL DEFAULT '0',
+  `bestanswer` int(10) unsigned NOT NULL DEFAULT '0',
+  `status` tinyint(1) NOT NULL DEFAULT '0',
+  `disorder` smallint(6) NOT NULL DEFAULT '0',
+  `views` int(10) unsigned NOT NULL DEFAULT '0',
+  `replies` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `ip` char(15) NOT NULL DEFAULT '',
+  `content` mediumtext NOT NULL,
+  `extra` mediumtext NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `disorder` (`tid`,`tid2`,`status`,`dateline`),
+  KEY `digest` (`digest`),
+  KEY `expiredtime` (`expiredtime`),
+  KEY `reward` (`reward`),
+  KEY `uid` (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_ask_scores`;
+
+CREATE TABLE `dede_ask_scores` (
+  `mid` int(11) NOT NULL,
+  `userid` char(20) NOT NULL,
+  `ascores` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `mscores` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_askanswer`;
+
+CREATE TABLE `dede_askanswer` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `askid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `ifanswer` tinyint(1) NOT NULL DEFAULT '0',
+  `tid` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `tid2` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `uid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `username` char(32) NOT NULL DEFAULT '',
+  `anonymous` tinyint(1) NOT NULL DEFAULT '0',
+  `goodrate` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `badrate` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `dateline` int(10) unsigned NOT NULL DEFAULT '0',
+  `brief` char(200) NOT NULL DEFAULT '',
+  `content` mediumtext NOT NULL,
+  `ifcheck` tinyint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`),
+  KEY `askid` (`askid`),
+  KEY `uid` (`uid`),
+  KEY `dateline` (`askid`,`dateline`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_asktype`;
+
+CREATE TABLE `dede_asktype` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `name` char(50) NOT NULL DEFAULT '',
+  `reid` int(10) unsigned NOT NULL DEFAULT '0',
+  `disorder` int(10) unsigned NOT NULL DEFAULT '0',
+  `asknum` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `disorder` (`disorder`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_b2b`;
+
+CREATE TABLE `dede_b2b` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `case_url` varchar(250) NOT NULL DEFAULT 'http://',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_b2c`;
+
+CREATE TABLE `dede_b2c` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `case_url` varchar(250) NOT NULL DEFAULT 'http://',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_baoming`;
+
+CREATE TABLE `dede_baoming` (
+  `id` int(50) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `sex` varchar(3) NOT NULL,
+  `maileaddr` varchar(80) NOT NULL,
+  `hometel` varchar(15) NOT NULL,
+  `qq` varchar(15) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `time` int(15) NOT NULL,
+  `luqu` int(1) NOT NULL DEFAULT '0',
+  `zhuanye` varchar(50) NOT NULL,
+  `beizhu` text NOT NULL,
+  `ip` varchar(40) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_bookfeedback`;
+
+CREATE TABLE `dede_bookfeedback` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `catid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `username` char(20) NOT NULL DEFAULT '',
+  `arctitle` varchar(60) NOT NULL DEFAULT '',
+  `ip` char(15) NOT NULL DEFAULT '',
+  `ischeck` smallint(6) NOT NULL DEFAULT '0',
+  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `bad` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `good` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `ftype` set('feedback','good','bad') NOT NULL DEFAULT 'feedback',
+  `face` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `msg` text,
+  PRIMARY KEY (`id`),
+  KEY `aid` (`aid`,`ischeck`,`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_cache_feedbackurl`;
+
+CREATE TABLE `dede_cache_feedbackurl` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `url` varchar(80) NOT NULL DEFAULT '',
+  `title` varchar(80) NOT NULL DEFAULT '',
+  `postnum` int(11) NOT NULL DEFAULT '0',
+  `posttime` int(11) NOT NULL DEFAULT '0',
+  `feedid` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `url` (`url`),
+  KEY `postnum` (`postnum`,`posttime`,`feedid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_case`;
+
+CREATE TABLE `dede_case` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `case_url` varchar(250) NOT NULL DEFAULT 'http://',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_channeltype`;
+
+CREATE TABLE `dede_channeltype` (
+  `id` smallint(6) NOT NULL DEFAULT '0',
+  `nid` varchar(20) NOT NULL DEFAULT '',
+  `typename` varchar(30) NOT NULL DEFAULT '',
+  `maintable` varchar(50) NOT NULL DEFAULT 'dede_archives',
+  `addtable` varchar(50) NOT NULL DEFAULT '',
+  `addcon` varchar(30) NOT NULL DEFAULT '',
+  `mancon` varchar(30) NOT NULL DEFAULT '',
+  `editcon` varchar(30) NOT NULL DEFAULT '',
+  `useraddcon` varchar(30) NOT NULL DEFAULT '',
+  `usermancon` varchar(30) NOT NULL DEFAULT '',
+  `usereditcon` varchar(30) NOT NULL DEFAULT '',
+  `fieldset` text,
+  `listfields` text,
+  `allfields` text,
+  `issystem` smallint(6) NOT NULL DEFAULT '0',
+  `isshow` smallint(6) NOT NULL DEFAULT '1',
+  `issend` smallint(6) NOT NULL DEFAULT '0',
+  `arcsta` smallint(6) NOT NULL DEFAULT '-1',
+  `usertype` char(10) NOT NULL DEFAULT '',
+  `sendrank` smallint(6) NOT NULL DEFAULT '10',
+  `isdefault` smallint(6) NOT NULL DEFAULT '0',
+  `needdes` tinyint(1) NOT NULL DEFAULT '1',
+  `needpic` tinyint(1) NOT NULL DEFAULT '1',
+  `titlename` varchar(20) NOT NULL DEFAULT '标题',
+  `onlyone` smallint(6) NOT NULL DEFAULT '0',
+  `dfcid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `nid` (`nid`,`isshow`,`arcsta`,`sendrank`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_co_dataswitch`;
+
+CREATE TABLE `dede_co_dataswitch` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `notename` varchar(100) NOT NULL DEFAULT '',
+  `channelid` int(11) NOT NULL DEFAULT '0',
+  `description` varchar(250) NOT NULL DEFAULT '',
+  `addtime` int(11) NOT NULL DEFAULT '0',
+  `notes` text NOT NULL,
+  PRIMARY KEY (`aid`),
+  KEY `notename` (`notename`,`channelid`,`description`,`addtime`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_co_exrule`;
+
+CREATE TABLE `dede_co_exrule` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `channelid` int(11) NOT NULL DEFAULT '0',
+  `rulename` varchar(100) NOT NULL DEFAULT '',
+  `etype` varchar(10) NOT NULL DEFAULT '',
+  `dtime` int(11) NOT NULL DEFAULT '0',
+  `ruleset` text NOT NULL,
+  PRIMARY KEY (`aid`),
+  KEY `rulename` (`rulename`,`etype`,`dtime`,`channelid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_co_htmls`;
+
+CREATE TABLE `dede_co_htmls` (
+  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `nid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `litpic` varchar(100) NOT NULL DEFAULT '',
+  `url` varchar(100) NOT NULL DEFAULT '',
+  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `isdown` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `isexport` tinyint(1) NOT NULL DEFAULT '0',
+  `result` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `nid` (`nid`),
+  KEY `typeid` (`typeid`,`title`,`url`,`dtime`,`isdown`,`isexport`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_co_listenurl`;
+
+CREATE TABLE `dede_co_listenurl` (
+  `nid` int(11) NOT NULL DEFAULT '0',
+  `url` varchar(150) NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_co_mediaurl`;
+
+CREATE TABLE `dede_co_mediaurl` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `nid` int(11) NOT NULL DEFAULT '0',
+  `rurl` varchar(150) NOT NULL DEFAULT '',
+  `nurl` varchar(80) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `nurl` (`nurl`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_co_mediaurls`;
+
+CREATE TABLE `dede_co_mediaurls` (
+  `nid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `hash` char(32) NOT NULL DEFAULT '',
+  `tofile` char(60) NOT NULL DEFAULT '',
+  KEY `hash` (`hash`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_co_note`;
+
+CREATE TABLE `dede_co_note` (
+  `nid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `channelid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `notename` varchar(50) NOT NULL DEFAULT '',
+  `sourcelang` varchar(10) NOT NULL DEFAULT 'gb2312',
+  `uptime` int(10) unsigned NOT NULL DEFAULT '0',
+  `cotime` int(10) unsigned NOT NULL DEFAULT '0',
+  `pnum` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `isok` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `usemore` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `listconfig` text,
+  `itemconfig` text,
+  PRIMARY KEY (`nid`),
+  KEY `isok` (`isok`,`channelid`,`cotime`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_co_onepage`;
+
+CREATE TABLE `dede_co_onepage` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `url` varchar(60) NOT NULL DEFAULT '',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `issource` smallint(6) NOT NULL DEFAULT '1',
+  `lang` varchar(10) NOT NULL DEFAULT 'gb2312',
+  `rule` text,
+  PRIMARY KEY (`id`),
+  KEY `url` (`url`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_co_urls`;
+
+CREATE TABLE `dede_co_urls` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `hash` varchar(32) NOT NULL DEFAULT '',
+  `nid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_code`;
+
+CREATE TABLE `dede_code` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `preview` varchar(250) NOT NULL DEFAULT '',
+  `download` varchar(250) NOT NULL DEFAULT '',
+  `comp` varchar(250) NOT NULL DEFAULT '',
+  `supplement` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_conote`;
+
+CREATE TABLE `dede_conote` (
+  `nid` int(11) NOT NULL AUTO_INCREMENT,
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `gathername` varchar(50) NOT NULL DEFAULT '',
+  `language` varchar(10) NOT NULL DEFAULT 'gb2312',
+  `arcsource` varchar(50) NOT NULL DEFAULT '',
+  `savetime` int(11) NOT NULL DEFAULT '0',
+  `lasttime` int(11) NOT NULL DEFAULT '0',
+  `noteinfo` text NOT NULL,
+  PRIMARY KEY (`nid`),
+  KEY `conote` (`typeid`,`gathername`,`lasttime`,`savetime`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_contact`;
+
+CREATE TABLE `dede_contact` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_courl`;
+
+CREATE TABLE `dede_courl` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `nid` int(11) NOT NULL DEFAULT '0',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `url` varchar(150) NOT NULL DEFAULT '',
+  `dtime` int(11) NOT NULL DEFAULT '0',
+  `isdown` smallint(6) NOT NULL DEFAULT '0',
+  `isex` smallint(6) NOT NULL DEFAULT '0',
+  `result` mediumtext NOT NULL,
+  PRIMARY KEY (`aid`),
+  KEY `nid` (`nid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_dev`;
+
+CREATE TABLE `dede_dev` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_dingdan`;
+
+CREATE TABLE `dede_dingdan` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `ifcheck` tinyint(1) NOT NULL DEFAULT '0',
+  `chanpin` set('餐桌系列','餐椅系列','排椅系列','教学系列','公用系列','办公系列','酒店系列') DEFAULT NULL,
+  `shuliang` int(11) NOT NULL DEFAULT '0',
+  `name` char(100) NOT NULL DEFAULT '',
+  `dizhi` char(100) NOT NULL DEFAULT '',
+  `youbian` varchar(250) NOT NULL DEFAULT '',
+  `ren` varchar(250) NOT NULL DEFAULT '',
+  `dianhua` char(100) NOT NULL DEFAULT '',
+  `shouji` varchar(250) NOT NULL DEFAULT '',
+  `email` varchar(250) NOT NULL DEFAULT '',
+  `beizhu` mediumtext,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_diy`;
+
+CREATE TABLE `dede_diy` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_diyfk`;
+
+CREATE TABLE `dede_diyfk` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `ifcheck` tinyint(1) NOT NULL DEFAULT '0',
+  `name` varchar(250) NOT NULL DEFAULT '',
+  `tel` varchar(250) NOT NULL DEFAULT '',
+  `xuqiu` mediumtext,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_diyform1`;
+
+CREATE TABLE `dede_diyform1` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `ifcheck` tinyint(1) NOT NULL DEFAULT '0',
+  `username` varchar(250) NOT NULL DEFAULT '',
+  `sex` enum('先生','女士') DEFAULT NULL,
+  `job` varchar(250) NOT NULL DEFAULT '',
+  `team` varchar(250) NOT NULL DEFAULT '',
+  `tel` varchar(250) NOT NULL DEFAULT '',
+  `phone` varchar(250) NOT NULL DEFAULT '',
+  `email` varchar(250) NOT NULL DEFAULT '',
+  `company` varchar(250) NOT NULL DEFAULT '',
+  `address` varchar(250) NOT NULL DEFAULT '',
+  `number` enum('100人以下','100-300人','500-1000人','1000以上') DEFAULT NULL,
+  `problem` set('集团管控','组织架构与变革','人力资源管理体系设计','流程管理','知识管理','供应链管理','IT战略规划','IT解决方案','培训','服务外包（人力资源、IT运维）') DEFAULT NULL,
+  `know` enum('搜索引擎(百度/谷歌)','媒体报道/网站','朋友介绍','现场活动','其他') DEFAULT NULL,
+  `demand` enum('是','否') DEFAULT NULL,
+  `cooperation` enum('是','否') DEFAULT NULL,
+  `implement` enum('一个月内','三个月内','半年内','暂时没有计划') DEFAULT NULL,
+  `incoming` enum('是','否') DEFAULT NULL,
+  `areacode` varchar(250) NOT NULL DEFAULT '',
+  `extension` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_diyform2`;
+
+CREATE TABLE `dede_diyform2` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `ifcheck` tinyint(1) NOT NULL DEFAULT '0',
+  `subscribe` set('AMT电子期刊','AMT《前沿论丛》电子版') DEFAULT NULL,
+  `username` varchar(250) NOT NULL DEFAULT '',
+  `position` varchar(250) NOT NULL DEFAULT '',
+  `department` varchar(250) NOT NULL DEFAULT '',
+  `telephone` varchar(250) NOT NULL DEFAULT '',
+  `fax` varchar(250) NOT NULL DEFAULT '',
+  `email` varchar(250) NOT NULL DEFAULT '',
+  `code` varchar(250) NOT NULL DEFAULT '',
+  `address` varchar(250) NOT NULL DEFAULT '',
+  `company` varchar(250) NOT NULL DEFAULT '',
+  `areacode` varchar(250) NOT NULL DEFAULT '',
+  `extension` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_diyform3`;
+
+CREATE TABLE `dede_diyform3` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `ifcheck` tinyint(1) NOT NULL DEFAULT '0',
+  `company` varchar(250) NOT NULL DEFAULT '',
+  `address` varchar(250) NOT NULL DEFAULT '',
+  `website` varchar(250) NOT NULL DEFAULT '',
+  `zipcode` varchar(250) NOT NULL DEFAULT '',
+  `username` varchar(250) NOT NULL DEFAULT '',
+  `department` varchar(250) NOT NULL DEFAULT '',
+  `position` varchar(250) NOT NULL DEFAULT '',
+  `telephone` varchar(250) NOT NULL DEFAULT '',
+  `tel` varchar(250) NOT NULL DEFAULT '',
+  `email` varchar(250) NOT NULL DEFAULT '',
+  `areacode` varchar(250) NOT NULL DEFAULT '',
+  `extension` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_diyform_dp`;
+
+CREATE TABLE `dede_diyform_dp` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `ifcheck` tinyint(1) NOT NULL DEFAULT '0',
+  `krname` varchar(250) NOT NULL DEFAULT '',
+  `diqu` varchar(250) NOT NULL DEFAULT '',
+  `dianhua` varchar(250) NOT NULL DEFAULT '',
+  `pingjia` mediumtext,
+  `jingdian` mediumtext,
+  `ganxie` mediumtext,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_diyforms`;
+
+CREATE TABLE `dede_diyforms` (
+  `diyid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL DEFAULT '',
+  `posttemplate` varchar(50) NOT NULL,
+  `viewtemplate` varchar(50) NOT NULL,
+  `listtemplate` varchar(50) NOT NULL,
+  `table` varchar(50) NOT NULL DEFAULT '',
+  `info` text,
+  `public` tinyint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`diyid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_dl_log`;
+
+CREATE TABLE `dede_dl_log` (
+  `id` mediumint(10) unsigned NOT NULL AUTO_INCREMENT,
+  `ip` char(16) NOT NULL,
+  `lang` char(6) NOT NULL,
+  `dtype` varchar(10) NOT NULL,
+  `dltime` int(10) unsigned NOT NULL DEFAULT '0',
+  `referrer` varchar(255) NOT NULL DEFAULT '',
+  `user_agent` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `dltime` (`dltime`),
+  KEY `dl_ip` (`ip`,`dltime`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_downloads`;
+
+CREATE TABLE `dede_downloads` (
+  `hash` char(32) NOT NULL,
+  `id` int(10) unsigned NOT NULL DEFAULT '0',
+  `downloads` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`hash`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_erradd`;
+
+CREATE TABLE `dede_erradd` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `aid` mediumint(8) unsigned NOT NULL,
+  `mid` mediumint(8) unsigned DEFAULT NULL,
+  `title` char(60) NOT NULL DEFAULT '',
+  `type` smallint(6) NOT NULL DEFAULT '0',
+  `errtxt` mediumtext,
+  `oktxt` mediumtext,
+  `sendtime` int(10) unsigned NOT NULL DEFAULT '0',
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_error`;
+
+CREATE TABLE `dede_error` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL DEFAULT '',
+  `ip` varchar(20) NOT NULL DEFAULT '',
+  `dtime` int(11) NOT NULL DEFAULT '0',
+  `url` varchar(100) NOT NULL DEFAULT '',
+  `info` mediumtext NOT NULL,
+  PRIMARY KEY (`aid`),
+  KEY `errIndex` (`title`,`ip`,`dtime`,`url`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_feedback`;
+
+CREATE TABLE `dede_feedback` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `username` char(20) NOT NULL DEFAULT '',
+  `arctitle` varchar(60) NOT NULL DEFAULT '',
+  `ip` char(15) NOT NULL DEFAULT '',
+  `ischeck` smallint(6) NOT NULL DEFAULT '0',
+  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `bad` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `good` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `ftype` set('feedback','good','bad') NOT NULL DEFAULT 'feedback',
+  `face` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `msg` text,
+  PRIMARY KEY (`id`),
+  KEY `aid` (`aid`,`ischeck`,`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_feedbacks`;
+
+CREATE TABLE `dede_feedbacks` (
+  `id` int(50) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `telephone` varchar(50) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `content` varchar(255) NOT NULL,
+  `addtime` int(20) NOT NULL,
+  `state` int(2) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_flash`;
+
+CREATE TABLE `dede_flash` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `sortrank` smallint(6) NOT NULL DEFAULT '0',
+  `url` char(60) NOT NULL DEFAULT '',
+  `webname` char(30) NOT NULL DEFAULT '',
+  `msg` char(200) NOT NULL DEFAULT '',
+  `pic` char(60) NOT NULL DEFAULT '',
+  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `ischeck` smallint(6) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_flink`;
+
+CREATE TABLE `dede_flink` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `sortrank` smallint(6) NOT NULL DEFAULT '0',
+  `url` char(60) NOT NULL DEFAULT '',
+  `webname` char(30) NOT NULL DEFAULT '',
+  `msg` char(200) NOT NULL DEFAULT '',
+  `email` char(50) NOT NULL DEFAULT '',
+  `logo` char(60) NOT NULL DEFAULT '',
+  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `ischeck` smallint(6) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_flinktype`;
+
+CREATE TABLE `dede_flinktype` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `typename` varchar(50) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_freelist`;
+
+CREATE TABLE `dede_freelist` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(50) NOT NULL DEFAULT '',
+  `namerule` varchar(50) NOT NULL DEFAULT '',
+  `listdir` varchar(60) NOT NULL DEFAULT '',
+  `defaultpage` varchar(20) NOT NULL DEFAULT '',
+  `nodefault` smallint(6) NOT NULL DEFAULT '0',
+  `templet` varchar(50) NOT NULL DEFAULT '',
+  `edtime` int(11) NOT NULL DEFAULT '0',
+  `maxpage` smallint(5) unsigned NOT NULL DEFAULT '100',
+  `click` int(11) NOT NULL DEFAULT '1',
+  `listtag` mediumtext,
+  `keywords` varchar(100) NOT NULL DEFAULT '',
+  `description` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_friends`;
+
+CREATE TABLE `dede_friends` (
+  `friend_id` int(11) NOT NULL AUTO_INCREMENT,
+  `friend_from` bigint(20) NOT NULL DEFAULT '0',
+  `friend_to` bigint(20) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`friend_id`),
+  UNIQUE KEY `friends_from_to` (`friend_from`,`friend_to`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_fuli`;
+
+CREATE TABLE `dede_fuli` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `hzf` varchar(250) NOT NULL DEFAULT '',
+  `zt` enum('准备开始','进行中','以结束') DEFAULT NULL,
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_full_search`;
+
+CREATE TABLE `dede_full_search` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `channelid` int(11) NOT NULL DEFAULT '0',
+  `adminid` smallint(6) NOT NULL DEFAULT '0',
+  `mid` int(11) NOT NULL DEFAULT '0',
+  `att` smallint(6) NOT NULL DEFAULT '0',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `uptime` int(11) NOT NULL DEFAULT '0',
+  `pubdate` int(11) NOT NULL DEFAULT '0',
+  `title` varchar(80) NOT NULL,
+  `url` varchar(100) DEFAULT NULL,
+  `litpic` varchar(100) NOT NULL,
+  `keywords` varchar(60) DEFAULT NULL,
+  `addinfos` varchar(250) NOT NULL,
+  `digg` int(11) NOT NULL DEFAULT '0',
+  `diggtime` int(11) NOT NULL DEFAULT '0',
+  `click` int(11) DEFAULT '0',
+  `mtype` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`aid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_gamecard`;
+
+CREATE TABLE `dede_gamecard` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `startime` int(11) NOT NULL DEFAULT '0',
+  `overtime` int(11) NOT NULL DEFAULT '0',
+  `lqjb` int(11) NOT NULL DEFAULT '0',
+  `fazt` enum('开始发放','发放结束','已补仓') DEFAULT NULL,
+  `cardname` varchar(250) NOT NULL DEFAULT '',
+  `gfurl` varchar(250) NOT NULL DEFAULT '',
+  `yygs` varchar(250) NOT NULL DEFAULT '',
+  `tel` varchar(250) NOT NULL DEFAULT '',
+  `jharurl` varchar(250) NOT NULL DEFAULT 'http://',
+  `cardinfo` mediumtext,
+  `total` int(11) NOT NULL DEFAULT '0',
+  `remain` int(11) NOT NULL DEFAULT '0',
+  `cardlqinfo` mediumtext,
+  `ydoff` enum('off','on') DEFAULT NULL,
+  `yuding_zt` enum('open','over') DEFAULT NULL,
+  `ydjf` int(11) NOT NULL DEFAULT '0',
+  `yuding_r` float NOT NULL DEFAULT '0',
+  `yuding` mediumtext,
+  `email_r` int(11) NOT NULL DEFAULT '0',
+  `emailid` mediumtext,
+  `email` mediumtext,
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_gamecard_jl`;
+
+CREATE TABLE `dede_gamecard_jl` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `floginid` varchar(20) NOT NULL DEFAULT '',
+  `fromid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `gamecard` varchar(200) NOT NULL,
+  `folder` enum('inbox','outbox') DEFAULT 'inbox',
+  `subject` varchar(60) NOT NULL DEFAULT '',
+  `sendtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `writetime` int(10) unsigned NOT NULL DEFAULT '0',
+  `hasview` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `isadmin` tinyint(1) NOT NULL DEFAULT '0',
+  `message` mediumtext,
+  PRIMARY KEY (`id`),
+  KEY `sendtime` (`sendtime`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_gamecard_rz`;
+
+CREATE TABLE `dede_gamecard_rz` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `carduid` varchar(20) NOT NULL,
+  `cardmid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `gamecard` char(20) NOT NULL,
+  `rztime` int(10) unsigned NOT NULL DEFAULT '0',
+  `gameaid` varchar(250) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_games`;
+
+CREATE TABLE `dede_games` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `leixing` enum('音乐舞蹈','角色扮演','FPS枪战','益智休闲','体育运动','即时战略','竞速赛车','动作格斗') DEFAULT NULL,
+  `huamian` enum('3D','2D','2.5D') DEFAULT NULL,
+  `kaifa` varchar(250) NOT NULL DEFAULT '未知',
+  `yunying` varchar(250) NOT NULL DEFAULT '未知',
+  `gmurl` varchar(250) NOT NULL DEFAULT '',
+  `topimg` varchar(250) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  `zhuangtai` enum('运营中','内测','公测','未上线','未知','封测','开放') DEFAULT NULL,
+  `cstime` int(11) NOT NULL DEFAULT '0',
+  `zimu` enum('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z') DEFAULT NULL,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_group_guestbook`;
+
+CREATE TABLE `dede_group_guestbook` (
+  `bid` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(80) NOT NULL DEFAULT '',
+  `uname` char(15) NOT NULL DEFAULT '',
+  `userid` int(11) unsigned NOT NULL DEFAULT '0',
+  `gid` int(11) unsigned NOT NULL DEFAULT '0',
+  `stime` int(10) unsigned NOT NULL DEFAULT '0',
+  `message` text NOT NULL,
+  `ip` varchar(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`bid`),
+  KEY `userid` (`userid`,`gid`),
+  KEY `sitme` (`stime`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_group_notice`;
+
+CREATE TABLE `dede_group_notice` (
+  `id` smallint(6) unsigned NOT NULL AUTO_INCREMENT,
+  `uname` char(15) NOT NULL DEFAULT '',
+  `userid` int(11) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(80) NOT NULL DEFAULT '',
+  `notice` text NOT NULL,
+  `stime` int(10) unsigned NOT NULL DEFAULT '0',
+  `gid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `ip` varchar(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  KEY `stime` (`stime`),
+  KEY `userid` (`userid`),
+  KEY `gid` (`gid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_group_posts`;
+
+CREATE TABLE `dede_group_posts` (
+  `pid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `gid` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `tid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `first` tinyint(1) NOT NULL DEFAULT '0',
+  `author` char(15) NOT NULL DEFAULT '',
+  `subject` varchar(80) NOT NULL DEFAULT '',
+  `dateline` int(10) unsigned NOT NULL DEFAULT '0',
+  `message` mediumtext NOT NULL,
+  `useip` varchar(15) NOT NULL DEFAULT '',
+  `anonymous` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `status` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `authorid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`pid`),
+  KEY `gid` (`gid`,`tid`,`author`),
+  KEY `dateline` (`dateline`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_group_smalltypes`;
+
+CREATE TABLE `dede_group_smalltypes` (
+  `id` smallint(6) unsigned NOT NULL AUTO_INCREMENT,
+  `gid` int(10) unsigned NOT NULL DEFAULT '0',
+  `userid` int(11) unsigned NOT NULL DEFAULT '0',
+  `name` char(15) NOT NULL,
+  `disorder` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `disorder` (`disorder`),
+  KEY `userid` (`userid`,`gid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_group_threads`;
+
+CREATE TABLE `dede_group_threads` (
+  `tid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `gid` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `smalltype` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `subject` char(80) NOT NULL DEFAULT '',
+  `displayorder` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `author` char(15) NOT NULL DEFAULT '',
+  `authorid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `views` int(10) unsigned NOT NULL DEFAULT '0',
+  `dateline` int(10) unsigned NOT NULL DEFAULT '0',
+  `lastpost` int(10) unsigned NOT NULL DEFAULT '0',
+  `lastposter` char(15) NOT NULL DEFAULT '',
+  `replies` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `digest` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `closed` mediumint(8) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`tid`),
+  KEY `digest` (`digest`),
+  KEY `authorid` (`authorid`,`dateline`),
+  KEY `displayorder` (`gid`,`lastpost`,`displayorder`,`smalltype`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_group_user`;
+
+CREATE TABLE `dede_group_user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `uid` int(11) unsigned NOT NULL DEFAULT '0',
+  `username` varchar(15) NOT NULL DEFAULT '',
+  `gid` int(11) unsigned NOT NULL DEFAULT '0',
+  `posts` int(10) unsigned NOT NULL DEFAULT '0',
+  `replies` int(10) unsigned NOT NULL DEFAULT '0',
+  `jointime` int(10) unsigned NOT NULL DEFAULT '0',
+  `isjoin` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `uid` (`uid`,`gid`),
+  KEY `jointime` (`jointime`),
+  KEY `posts` (`posts`),
+  KEY `replies` (`replies`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_groups`;
+
+CREATE TABLE `dede_groups` (
+  `groupid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `groupname` varchar(75) NOT NULL DEFAULT '',
+  `des` text,
+  `groupimg` varchar(200) NOT NULL DEFAULT '0',
+  `rootstoreid` int(10) unsigned NOT NULL DEFAULT '0',
+  `storeid` int(10) unsigned NOT NULL DEFAULT '0',
+  `smalltype` text,
+  `uid` int(10) unsigned NOT NULL DEFAULT '0',
+  `creater` char(15) NOT NULL DEFAULT '',
+  `ismaster` text,
+  `issystem` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `isindex` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `ishidden` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `hits` int(13) unsigned NOT NULL DEFAULT '0',
+  `threads` int(13) unsigned NOT NULL DEFAULT '0',
+  `members` int(13) unsigned NOT NULL DEFAULT '0',
+  `stime` int(10) unsigned NOT NULL DEFAULT '0',
+  `theme` char(20) NOT NULL DEFAULT 'default',
+  PRIMARY KEY (`groupid`),
+  KEY `uid` (`uid`),
+  KEY `stime` (`stime`),
+  KEY `storeid` (`storeid`,`rootstoreid`),
+  KEY `hits` (`hits`),
+  KEY `threads` (`threads`,`members`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_guestbook`;
+
+CREATE TABLE `dede_guestbook` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `tid` mediumint(8) NOT NULL DEFAULT '0',
+  `mid` mediumint(8) unsigned DEFAULT '0',
+  `posttime` int(10) unsigned NOT NULL DEFAULT '0',
+  `uname` varchar(30) NOT NULL DEFAULT '',
+  `email` varchar(50) NOT NULL DEFAULT '',
+  `homepage` varchar(50) NOT NULL DEFAULT '',
+  `qq` varchar(15) NOT NULL DEFAULT '',
+  `face` varchar(10) NOT NULL DEFAULT '',
+  `ip` varchar(20) NOT NULL DEFAULT '',
+  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `ischeck` smallint(6) NOT NULL DEFAULT '1',
+  `msg` text,
+  PRIMARY KEY (`id`),
+  KEY `ischeck` (`ischeck`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_help`;
+
+CREATE TABLE `dede_help` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_hiring`;
+
+CREATE TABLE `dede_hiring` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `city` varchar(250) NOT NULL DEFAULT '',
+  `rs` varchar(250) NOT NULL DEFAULT '',
+  `zpyq` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_homepageset`;
+
+CREATE TABLE `dede_homepageset` (
+  `templet` char(50) NOT NULL DEFAULT '',
+  `position` char(30) NOT NULL DEFAULT '',
+  `showmod` tinyint(2) NOT NULL DEFAULT '1'
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_infos`;
+
+CREATE TABLE `dede_infos` (
+  `ID` int(11) unsigned NOT NULL DEFAULT '0',
+  `typeid` int(11) unsigned NOT NULL DEFAULT '0',
+  `typeid2` int(11) unsigned NOT NULL DEFAULT '0',
+  `sortrank` int(11) NOT NULL DEFAULT '0',
+  `iscommend` smallint(6) NOT NULL DEFAULT '0',
+  `ismake` smallint(6) NOT NULL DEFAULT '0',
+  `channel` int(11) NOT NULL DEFAULT '1',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `click` int(11) unsigned NOT NULL DEFAULT '0',
+  `money` smallint(6) NOT NULL DEFAULT '0',
+  `title` varchar(80) NOT NULL DEFAULT '',
+  `shorttitle` varchar(36) NOT NULL DEFAULT '',
+  `color` varchar(10) NOT NULL DEFAULT '',
+  `writer` varchar(30) NOT NULL DEFAULT '',
+  `source` varchar(50) NOT NULL DEFAULT '',
+  `litpic` varchar(100) NOT NULL DEFAULT '',
+  `pubdate` int(11) NOT NULL DEFAULT '0',
+  `senddate` int(11) NOT NULL DEFAULT '0',
+  `arcatt` smallint(6) NOT NULL DEFAULT '0',
+  `adminID` int(11) NOT NULL DEFAULT '0',
+  `memberID` int(11) unsigned NOT NULL DEFAULT '0',
+  `description` varchar(250) NOT NULL DEFAULT '',
+  `keywords` varchar(60) NOT NULL DEFAULT '',
+  `templet` varchar(60) NOT NULL DEFAULT '',
+  `lastpost` int(11) NOT NULL DEFAULT '0',
+  `postnum` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(150) NOT NULL DEFAULT '',
+  `mtype` int(11) NOT NULL DEFAULT '0',
+  `userip` varchar(20) NOT NULL DEFAULT '',
+  `locklikeid` smallint(6) NOT NULL DEFAULT '0',
+  `likeid` varchar(240) DEFAULT '',
+  `smalltypeid` smallint(6) NOT NULL DEFAULT '0',
+  `areaid` smallint(6) NOT NULL DEFAULT '0',
+  `areaid2` smallint(6) NOT NULL DEFAULT '0',
+  `sectorid` smallint(6) NOT NULL DEFAULT '0',
+  `sectorid2` smallint(6) NOT NULL DEFAULT '0',
+  `endtime` int(11) NOT NULL DEFAULT '0',
+  `digg` int(11) NOT NULL DEFAULT '0',
+  `diggtime` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`ID`),
+  KEY `typeid` (`typeid`,`typeid2`,`sortrank`,`channel`,`arcrank`,`adminID`,`memberID`,`smalltypeid`,`areaid`,`areaid2`,`sectorid`,`sectorid2`,`senddate`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_jobs`;
+
+CREATE TABLE `dede_jobs` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) DEFAULT NULL,
+  `job` varchar(100) DEFAULT NULL,
+  `nums` int(10) unsigned NOT NULL DEFAULT '0',
+  `department` varchar(100) DEFAULT NULL,
+  `address` varchar(200) DEFAULT NULL,
+  `pubdate` int(10) unsigned NOT NULL DEFAULT '0',
+  `endtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `salaries` int(10) unsigned NOT NULL DEFAULT '0',
+  `message` mediumtext,
+  `memberID` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `memberID` (`memberID`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_keywords`;
+
+CREATE TABLE `dede_keywords` (
+  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `keyword` char(16) NOT NULL DEFAULT '',
+  `rank` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `sta` smallint(6) NOT NULL DEFAULT '1',
+  `rpurl` char(60) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `keyword` (`keyword`,`rank`,`sta`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_kwavc`;
+
+CREATE TABLE `dede_kwavc` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `siteurl` varchar(50) DEFAULT NULL,
+  `typeid` int(3) DEFAULT NULL,
+  `title` varchar(200) DEFAULT NULL,
+  `writer` varchar(200) DEFAULT NULL,
+  `source` varchar(200) DEFAULT NULL,
+  `content` varchar(200) DEFAULT NULL,
+  `page` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_kwavcdata`;
+
+CREATE TABLE `dede_kwavcdata` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `tid` int(10) DEFAULT NULL,
+  `url` varchar(200) DEFAULT NULL,
+  `finish` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_kwcache`;
+
+CREATE TABLE `dede_kwcache` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `nid` smallint(5) unsigned NOT NULL,
+  `url` text,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_kwhash`;
+
+CREATE TABLE `dede_kwhash` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `hash` varchar(32) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_kwkeyword`;
+
+CREATE TABLE `dede_kwkeyword` (
+  `nid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `typeid` smallint(5) unsigned NOT NULL,
+  `keyword` text,
+  `type` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `isclose` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `pn` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `update` int(15) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`nid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_kwlog`;
+
+CREATE TABLE `dede_kwlog` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `note` varchar(100) DEFAULT NULL,
+  `msg` varchar(120) DEFAULT NULL,
+  `addtime` int(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_kwpic`;
+
+CREATE TABLE `dede_kwpic` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `aid` int(11) DEFAULT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_log`;
+
+CREATE TABLE `dede_log` (
+  `lid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `adminid` smallint(8) unsigned NOT NULL DEFAULT '0',
+  `filename` char(60) NOT NULL DEFAULT '',
+  `method` char(10) NOT NULL DEFAULT '',
+  `query` char(200) NOT NULL DEFAULT '',
+  `cip` char(15) NOT NULL DEFAULT '',
+  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`lid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_mail_order`;
+
+CREATE TABLE `dede_mail_order` (
+  `mid` mediumint(8) NOT NULL,
+  `typeid` smallint(5) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_mail_title`;
+
+CREATE TABLE `dede_mail_title` (
+  `id` mediumint(8) NOT NULL AUTO_INCREMENT,
+  `period` int(10) NOT NULL,
+  `typeid` smallint(5) NOT NULL,
+  `title` char(200) NOT NULL,
+  `content` mediumtext NOT NULL,
+  `addtime` int(10) NOT NULL,
+  `sendtime` int(10) NOT NULL,
+  `writer` char(20) NOT NULL,
+  `mid` mediumint(8) NOT NULL,
+  `state` tinyint(1) NOT NULL DEFAULT '0',
+  `count` smallint(6) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_mail_type`;
+
+CREATE TABLE `dede_mail_type` (
+  `id` smallint(5) NOT NULL AUTO_INCREMENT,
+  `typename` char(60) NOT NULL,
+  `description` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member`;
+
+CREATE TABLE `dede_member` (
+  `mid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `mtype` varchar(20) NOT NULL DEFAULT '个人',
+  `userid` char(20) NOT NULL DEFAULT '',
+  `pwd` char(32) NOT NULL DEFAULT '',
+  `uname` char(36) NOT NULL DEFAULT '',
+  `sex` enum('男','女','保密') NOT NULL DEFAULT '保密',
+  `rank` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `uptime` int(11) NOT NULL DEFAULT '0',
+  `exptime` smallint(6) NOT NULL DEFAULT '0',
+  `money` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `email` char(50) NOT NULL DEFAULT '',
+  `scores` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `matt` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `spacesta` smallint(6) NOT NULL DEFAULT '0',
+  `face` char(50) NOT NULL DEFAULT '',
+  `safequestion` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `safeanswer` char(30) NOT NULL DEFAULT '',
+  `jointime` int(10) unsigned NOT NULL DEFAULT '0',
+  `joinip` char(16) NOT NULL DEFAULT '',
+  `logintime` int(10) unsigned NOT NULL DEFAULT '0',
+  `loginip` char(16) NOT NULL DEFAULT '',
+  `checkmail` smallint(6) NOT NULL DEFAULT '-1',
+  PRIMARY KEY (`mid`),
+  KEY `userid` (`userid`,`sex`),
+  KEY `logintime` (`logintime`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_10`;
+
+CREATE TABLE `dede_member_10` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_11`;
+
+CREATE TABLE `dede_member_11` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_12`;
+
+CREATE TABLE `dede_member_12` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_13`;
+
+CREATE TABLE `dede_member_13` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_14`;
+
+CREATE TABLE `dede_member_14` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_15`;
+
+CREATE TABLE `dede_member_15` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_16`;
+
+CREATE TABLE `dede_member_16` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_17`;
+
+CREATE TABLE `dede_member_17` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_18`;
+
+CREATE TABLE `dede_member_18` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_3`;
+
+CREATE TABLE `dede_member_3` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_member_4`;
+
+CREATE TABLE `dede_member_4` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_5`;
+
+CREATE TABLE `dede_member_5` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_6`;
+
+CREATE TABLE `dede_member_6` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_7`;
+
+CREATE TABLE `dede_member_7` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_8`;
+
+CREATE TABLE `dede_member_8` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_9`;
+
+CREATE TABLE `dede_member_9` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_archives`;
+
+CREATE TABLE `dede_member_archives` (
+  `id` mediumint(8) unsigned NOT NULL,
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `mtypeid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_arctype`;
+
+CREATE TABLE `dede_member_arctype` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `typename` varchar(50) NOT NULL DEFAULT '',
+  `memberid` int(11) NOT NULL DEFAULT '0',
+  `channelid` smallint(6) NOT NULL DEFAULT '0',
+  `rank` smallint(6) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`aid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_cominfo`;
+
+CREATE TABLE `dede_member_cominfo` (
+  `id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `truename` varchar(20) DEFAULT NULL,
+  `business` varchar(40) DEFAULT NULL,
+  `phone` varchar(12) DEFAULT NULL,
+  `fax` varchar(12) DEFAULT NULL,
+  `mobi` varchar(11) DEFAULT NULL,
+  `comname` varchar(100) DEFAULT NULL,
+  `regyear` varchar(4) DEFAULT NULL,
+  `areaid` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `areaid2` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `service` varchar(255) DEFAULT NULL,
+  `typeid1` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `typeid2` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `comaddr` varchar(100) DEFAULT NULL,
+  `cominfo` mediumtext,
+  `postid` varchar(6) DEFAULT NULL,
+  `website` varchar(100) DEFAULT NULL,
+  `culture` mediumtext,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_company`;
+
+CREATE TABLE `dede_member_company` (
+  `mid` mediumint(8) NOT NULL AUTO_INCREMENT,
+  `company` varchar(36) NOT NULL DEFAULT '',
+  `product` varchar(50) NOT NULL DEFAULT '',
+  `place` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `vocation` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `cosize` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `tel` varchar(30) NOT NULL DEFAULT '',
+  `fax` varchar(30) NOT NULL DEFAULT '',
+  `linkman` varchar(20) NOT NULL DEFAULT '',
+  `address` varchar(50) NOT NULL DEFAULT '',
+  `mobile` varchar(30) NOT NULL DEFAULT '',
+  `email` varchar(50) NOT NULL DEFAULT '',
+  `url` varchar(50) NOT NULL DEFAULT '',
+  `uptime` int(10) unsigned NOT NULL DEFAULT '0',
+  `checked` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `introduce` text,
+  `comface` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_default`;
+
+CREATE TABLE `dede_member_default` (
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `onlynet` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `sex` enum('男','女','保密') NOT NULL DEFAULT '男',
+  `uname` char(100) NOT NULL DEFAULT '',
+  `qq` char(12) NOT NULL DEFAULT '',
+  `mobile` varchar(15) NOT NULL DEFAULT '',
+  `oldplace` varchar(19) NOT NULL DEFAULT '',
+  `education` smallint(6) NOT NULL DEFAULT '0',
+  `lovemsg` mediumtext,
+  `uptime` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_member_feed`;
+
+CREATE TABLE `dede_member_feed` (
+  `fid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `mid` smallint(8) unsigned NOT NULL DEFAULT '0',
+  `userid` char(20) NOT NULL DEFAULT '',
+  `uname` char(36) NOT NULL DEFAULT '',
+  `type` char(20) CHARACTER SET gb2312 NOT NULL DEFAULT '0',
+  `aid` mediumint(8) NOT NULL DEFAULT '0',
+  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `title` char(253) NOT NULL,
+  `note` char(200) NOT NULL DEFAULT '',
+  `ischeck` smallint(6) NOT NULL,
+  PRIMARY KEY (`fid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_flink`;
+
+CREATE TABLE `dede_member_flink` (
+  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(30) NOT NULL DEFAULT '',
+  `url` varchar(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_friends`;
+
+CREATE TABLE `dede_member_friends` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `fid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `floginid` char(20) NOT NULL DEFAULT '',
+  `funame` char(36) NOT NULL DEFAULT '',
+  `mid` mediumint(8) NOT NULL DEFAULT '0',
+  `addtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `ftype` tinyint(4) NOT NULL DEFAULT '0',
+  `groupid` int(8) NOT NULL DEFAULT '1',
+  `description` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fid` (`fid`,`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_group`;
+
+CREATE TABLE `dede_member_group` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `groupname` varchar(50) NOT NULL,
+  `mid` int(8) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_guestbook`;
+
+CREATE TABLE `dede_member_guestbook` (
+  `aid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `gid` varchar(20) NOT NULL DEFAULT '0',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `uname` varchar(50) NOT NULL DEFAULT '',
+  `email` varchar(50) NOT NULL DEFAULT '',
+  `qq` varchar(50) NOT NULL DEFAULT '',
+  `tel` varchar(50) NOT NULL DEFAULT '',
+  `ip` varchar(20) NOT NULL DEFAULT '',
+  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `msg` text,
+  PRIMARY KEY (`aid`),
+  KEY `mid` (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_model`;
+
+CREATE TABLE `dede_member_model` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `table` varchar(30) NOT NULL,
+  `description` varchar(50) NOT NULL,
+  `state` int(2) NOT NULL DEFAULT '0',
+  `issystem` int(2) NOT NULL DEFAULT '0',
+  `info` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_msg`;
+
+CREATE TABLE `dede_member_msg` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `userid` char(20) NOT NULL DEFAULT '',
+  `ip` char(15) NOT NULL DEFAULT '',
+  `ischeck` smallint(6) NOT NULL DEFAULT '0',
+  `dtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `msg` text,
+  PRIMARY KEY (`id`),
+  KEY `id` (`ischeck`,`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_news`;
+
+CREATE TABLE `dede_member_news` (
+  `mid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_member_operation`;
+
+CREATE TABLE `dede_member_operation` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `buyid` varchar(80) NOT NULL DEFAULT '',
+  `pname` varchar(50) NOT NULL DEFAULT '',
+  `product` varchar(10) NOT NULL DEFAULT '',
+  `money` int(11) NOT NULL DEFAULT '0',
+  `mtime` int(11) NOT NULL DEFAULT '0',
+  `pid` int(11) NOT NULL DEFAULT '0',
+  `mid` int(11) NOT NULL DEFAULT '0',
+  `sta` int(11) NOT NULL DEFAULT '0',
+  `oldinfo` varchar(200) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `buyid` (`buyid`),
+  KEY `pid` (`pid`,`mid`,`sta`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_perinfo`;
+
+CREATE TABLE `dede_member_perinfo` (
+  `id` int(11) NOT NULL DEFAULT '0',
+  `uname` varchar(20) NOT NULL DEFAULT '',
+  `sex` char(2) NOT NULL DEFAULT '1',
+  `birthday` date NOT NULL DEFAULT '0000-00-00',
+  `weight` varchar(10) NOT NULL DEFAULT '',
+  `height` varchar(10) NOT NULL DEFAULT '',
+  `job` varchar(10) NOT NULL DEFAULT '',
+  `province` smallint(5) unsigned NOT NULL DEFAULT '1',
+  `city` smallint(6) NOT NULL DEFAULT '0',
+  `myinfo` varchar(250) NOT NULL DEFAULT '',
+  `tel` varchar(30) NOT NULL DEFAULT '',
+  `oicq` varchar(15) NOT NULL DEFAULT '',
+  `email` varchar(50) NOT NULL DEFAULT '',
+  `homepage` varchar(50) NOT NULL DEFAULT '',
+  `showaddr` smallint(6) NOT NULL DEFAULT '0',
+  `address` varchar(100) NOT NULL DEFAULT '',
+  `fullinfo` mediumtext,
+  PRIMARY KEY (`id`),
+  KEY `sex` (`sex`),
+  KEY `birthday` (`birthday`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_person`;
+
+CREATE TABLE `dede_member_person` (
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `onlynet` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `sex` enum('男','女','保密') NOT NULL DEFAULT '男',
+  `uname` char(30) NOT NULL DEFAULT '',
+  `qq` char(12) NOT NULL DEFAULT '',
+  `msn` char(50) NOT NULL DEFAULT '',
+  `tel` varchar(15) NOT NULL DEFAULT '',
+  `mobile` varchar(15) NOT NULL DEFAULT '',
+  `place` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `oldplace` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `birthday` date NOT NULL DEFAULT '1980-01-01',
+  `star` smallint(6) unsigned NOT NULL DEFAULT '1',
+  `income` smallint(6) NOT NULL DEFAULT '0',
+  `education` smallint(6) NOT NULL DEFAULT '0',
+  `height` smallint(5) unsigned NOT NULL DEFAULT '160',
+  `bodytype` smallint(6) NOT NULL DEFAULT '0',
+  `blood` smallint(6) NOT NULL DEFAULT '0',
+  `vocation` smallint(6) NOT NULL DEFAULT '0',
+  `smoke` smallint(6) NOT NULL DEFAULT '0',
+  `marital` smallint(6) NOT NULL DEFAULT '0',
+  `house` smallint(6) NOT NULL DEFAULT '0',
+  `drink` smallint(6) NOT NULL DEFAULT '0',
+  `datingtype` smallint(6) NOT NULL DEFAULT '0',
+  `language` set('普通话','上海话','广东话','英语','日语','韩语','法语','意大利语','德语','西班牙语','俄语','阿拉伯语') DEFAULT NULL,
+  `nature` set('性格外向','性格内向','活泼开朗','豪放不羁','患得患失','冲动','幽默','稳重','轻浮','沉默寡言','多愁善感','时喜时悲','附庸风雅','能说会道','坚强','脆弱','幼稚','成熟','快言快语','损人利己','狡猾善变','交际广泛','优柔寡断','自私','真诚','独立','依赖','难以琢磨','悲观消极','郁郁寡欢','胆小怕事','乐观向上','任性','自负','自卑','拜金','温柔体贴','小心翼翼','暴力倾向','逆来顺受','不拘小节','暴躁','倔强','豪爽','害羞','婆婆妈妈','敢做敢当','助人为乐','耿直','虚伪','孤僻','老实','守旧','敏感','迟钝','婆婆妈妈','武断','果断','刻薄') DEFAULT NULL,
+  `lovemsg` varchar(100) NOT NULL DEFAULT '',
+  `address` varchar(50) NOT NULL DEFAULT '',
+  `uptime` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_person_copy`;
+
+CREATE TABLE `dede_member_person_copy` (
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `onlynet` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `sex` enum('男','女','保密') NOT NULL DEFAULT '男',
+  `uname` char(30) NOT NULL DEFAULT '',
+  `qq` char(12) NOT NULL DEFAULT '',
+  `msn` char(50) NOT NULL DEFAULT '',
+  `tel` varchar(15) NOT NULL DEFAULT '',
+  `mobile` varchar(15) NOT NULL DEFAULT '',
+  `place` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `oldplace` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `birthday` date NOT NULL DEFAULT '1980-01-01',
+  `star` smallint(6) unsigned NOT NULL DEFAULT '1',
+  `income` smallint(6) NOT NULL DEFAULT '0',
+  `education` smallint(6) NOT NULL DEFAULT '0',
+  `height` smallint(5) unsigned NOT NULL DEFAULT '160',
+  `bodytype` smallint(6) NOT NULL DEFAULT '0',
+  `blood` smallint(6) NOT NULL DEFAULT '0',
+  `vocation` smallint(6) NOT NULL DEFAULT '0',
+  `smoke` smallint(6) NOT NULL DEFAULT '0',
+  `marital` smallint(6) NOT NULL DEFAULT '0',
+  `house` smallint(6) NOT NULL DEFAULT '0',
+  `drink` smallint(6) NOT NULL DEFAULT '0',
+  `datingtype` smallint(6) NOT NULL DEFAULT '0',
+  `language` set('普通话','上海话','广东话','英语','日语','韩语','法语','意大利语','德语','西班牙语','俄语','阿拉伯语') DEFAULT NULL,
+  `nature` set('性格外向','性格内向','活泼开朗','豪放不羁','患得患失','冲动','幽默','稳重','轻浮','沉默寡言','多愁善感','时喜时悲','附庸风雅','能说会道','坚强','脆弱','幼稚','成熟','快言快语','损人利己','狡猾善变','交际广泛','优柔寡断','自私','真诚','独立','依赖','难以琢磨','悲观消极','郁郁寡欢','胆小怕事','乐观向上','任性','自负','自卑','拜金','温柔体贴','小心翼翼','暴力倾向','逆来顺受','不拘小节','暴躁','倔强','豪爽','害羞','婆婆妈妈','敢做敢当','助人为乐','耿直','虚伪','孤僻','老实','守旧','敏感','迟钝','婆婆妈妈','武断','果断','刻薄') DEFAULT NULL,
+  `lovemsg` varchar(100) NOT NULL DEFAULT '',
+  `address` varchar(50) NOT NULL DEFAULT '',
+  `uptime` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_pms`;
+
+CREATE TABLE `dede_member_pms` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `floginid` varchar(20) NOT NULL DEFAULT '',
+  `fromid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `toid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `tologinid` char(20) NOT NULL DEFAULT '',
+  `folder` enum('inbox','outbox') DEFAULT 'inbox',
+  `subject` varchar(60) NOT NULL DEFAULT '',
+  `sendtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `writetime` int(10) unsigned NOT NULL DEFAULT '0',
+  `hasview` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `isadmin` tinyint(1) NOT NULL DEFAULT '0',
+  `message` text,
+  PRIMARY KEY (`id`),
+  KEY `sendtime` (`sendtime`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_qzonelogin`;
+
+CREATE TABLE `dede_member_qzonelogin` (
+  `id` int(8) unsigned NOT NULL AUTO_INCREMENT,
+  `mid` mediumint(8) NOT NULL DEFAULT '0',
+  `openid` char(32) NOT NULL DEFAULT '',
+  `token` char(30) NOT NULL,
+  `secret` char(30) NOT NULL DEFAULT '',
+  `stat` set('1','0') NOT NULL DEFAULT '1',
+  `dtime` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_snsmsg`;
+
+CREATE TABLE `dede_member_snsmsg` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `userid` varchar(20) NOT NULL,
+  `sendtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `msg` varchar(250) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_space`;
+
+CREATE TABLE `dede_member_space` (
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `pagesize` smallint(5) unsigned NOT NULL DEFAULT '10',
+  `matt` smallint(6) NOT NULL DEFAULT '0',
+  `spacename` varchar(50) NOT NULL DEFAULT '',
+  `spacelogo` varchar(50) NOT NULL DEFAULT '',
+  `spacestyle` varchar(20) NOT NULL DEFAULT '',
+  `sign` varchar(100) NOT NULL DEFAULT '没签名',
+  `spacenews` text,
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_stow`;
+
+CREATE TABLE `dede_member_stow` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `title` char(60) NOT NULL DEFAULT '',
+  `addtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `type` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `uid` (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_stowtype`;
+
+CREATE TABLE `dede_member_stowtype` (
+  `stowname` varchar(30) NOT NULL,
+  `indexname` varchar(30) NOT NULL,
+  `indexurl` varchar(50) NOT NULL,
+  PRIMARY KEY (`stowname`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_time`;
+
+CREATE TABLE `dede_member_time` (
+  `mday` smallint(6) NOT NULL DEFAULT '0',
+  `tname` varchar(30) NOT NULL DEFAULT '',
+  PRIMARY KEY (`mday`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_tj`;
+
+CREATE TABLE `dede_member_tj` (
+  `mid` mediumint(8) NOT NULL AUTO_INCREMENT,
+  `article` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `album` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `archives` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `homecount` int(10) unsigned NOT NULL DEFAULT '0',
+  `pagecount` int(10) unsigned NOT NULL DEFAULT '0',
+  `feedback` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `friend` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `stow` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `soft` int(10) NOT NULL DEFAULT '0',
+  `info` int(10) NOT NULL DEFAULT '0',
+  `shop` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_type`;
+
+CREATE TABLE `dede_member_type` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `rank` int(11) NOT NULL DEFAULT '0',
+  `pname` varchar(50) NOT NULL DEFAULT '',
+  `money` int(11) NOT NULL DEFAULT '0',
+  `exptime` int(11) NOT NULL DEFAULT '30',
+  PRIMARY KEY (`aid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_member_vhistory`;
+
+CREATE TABLE `dede_member_vhistory` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `loginid` char(20) NOT NULL DEFAULT '',
+  `vid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `vloginid` char(20) NOT NULL DEFAULT '',
+  `count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `vip` char(15) NOT NULL DEFAULT '',
+  `vtime` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `vtime` (`vtime`),
+  KEY `mid` (`mid`,`vid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_memberstow`;
+
+CREATE TABLE `dede_memberstow` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `uid` int(11) NOT NULL DEFAULT '0',
+  `arcid` int(11) NOT NULL DEFAULT '0',
+  `title` varchar(80) NOT NULL,
+  `url` varchar(200) NOT NULL,
+  `addtime` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`aid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_modules`;
+
+CREATE TABLE `dede_modules` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `modulename` varchar(50) NOT NULL DEFAULT '-',
+  `hash` varchar(50) NOT NULL DEFAULT '-',
+  `filename` varchar(50) NOT NULL DEFAULT '-',
+  `sta` smallint(6) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_moneycard_record`;
+
+CREATE TABLE `dede_moneycard_record` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `ctid` int(11) NOT NULL DEFAULT '0',
+  `cardid` varchar(50) NOT NULL DEFAULT '',
+  `uid` int(11) NOT NULL DEFAULT '0',
+  `isexp` smallint(6) NOT NULL DEFAULT '0',
+  `mtime` int(11) NOT NULL DEFAULT '0',
+  `utime` int(11) NOT NULL DEFAULT '0',
+  `money` int(11) NOT NULL DEFAULT '0',
+  `num` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`aid`),
+  KEY `ctid` (`ctid`),
+  KEY `cardid` (`cardid`),
+  KEY `uid` (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_moneycard_type`;
+
+CREATE TABLE `dede_moneycard_type` (
+  `tid` int(11) NOT NULL AUTO_INCREMENT,
+  `num` int(11) NOT NULL DEFAULT '500',
+  `money` int(11) NOT NULL DEFAULT '50',
+  `pname` varchar(50) NOT NULL DEFAULT '',
+  PRIMARY KEY (`tid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_moneyrecord`;
+
+CREATE TABLE `dede_moneyrecord` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `uid` int(11) NOT NULL DEFAULT '0',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `money` int(11) NOT NULL DEFAULT '0',
+  `dtime` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_mood`;
+
+CREATE TABLE `dede_mood` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `aid` int(11) NOT NULL,
+  `mood1` int(10) NOT NULL DEFAULT '0',
+  `mood2` int(10) NOT NULL DEFAULT '0',
+  `mood3` int(10) NOT NULL DEFAULT '0',
+  `mood4` int(10) NOT NULL DEFAULT '0',
+  `mood5` int(10) NOT NULL DEFAULT '0',
+  `mood6` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+DROP TABLE IF EXISTS `dede_mood_ranking`;
+
+CREATE TABLE `dede_mood_ranking` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `aid` int(10) NOT NULL,
+  `mood` int(1) NOT NULL,
+  `time` int(11) NOT NULL,
+  `ip` varchar(15) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `aid` (`mood`,`aid`,`time`,`ip`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+DROP TABLE IF EXISTS `dede_mtypes`;
+
+CREATE TABLE `dede_mtypes` (
+  `mtypeid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `mtypename` char(40) NOT NULL,
+  `channelid` smallint(6) NOT NULL DEFAULT '1',
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`mtypeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_multiserv_config`;
+
+CREATE TABLE `dede_multiserv_config` (
+  `remoteuploads` smallint(6) NOT NULL DEFAULT '0',
+  `remoteupUrl` text NOT NULL,
+  `rminfo` text,
+  `servinfo` mediumtext,
+  PRIMARY KEY (`remoteuploads`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_myad`;
+
+CREATE TABLE `dede_myad` (
+  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `clsid` smallint(5) NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `tagname` varchar(30) NOT NULL DEFAULT '',
+  `adname` varchar(60) NOT NULL DEFAULT '',
+  `timeset` smallint(6) NOT NULL DEFAULT '0',
+  `starttime` int(10) unsigned NOT NULL DEFAULT '0',
+  `endtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `normbody` text,
+  `expbody` text,
+  PRIMARY KEY (`aid`),
+  KEY `tagname` (`tagname`,`typeid`,`timeset`,`endtime`,`starttime`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_myadtype`;
+
+CREATE TABLE `dede_myadtype` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `typename` varchar(50) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_mydown`;
+
+CREATE TABLE `dede_mydown` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `mydownlink` varchar(100) NOT NULL DEFAULT '',
+  `mupingtai` varchar(200) NOT NULL DEFAULT '',
+  `mydetail` varchar(200) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_mynews`;
+
+CREATE TABLE `dede_mynews` (
+  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `writer` varchar(20) NOT NULL DEFAULT '',
+  `senddate` int(10) unsigned NOT NULL DEFAULT '0',
+  `body` text,
+  PRIMARY KEY (`aid`),
+  KEY `senddate` (`typeid`,`senddate`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_myppt`;
+
+CREATE TABLE `dede_myppt` (
+  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `orderid` int(10) NOT NULL DEFAULT '0',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `pic` varchar(255) NOT NULL DEFAULT '',
+  `url` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `orderid` (`orderid`,`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_myppttype`;
+
+CREATE TABLE `dede_myppttype` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `typename` varchar(50) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_mysingle`;
+
+CREATE TABLE `dede_mysingle` (
+  `aid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_mytag`;
+
+CREATE TABLE `dede_mytag` (
+  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `tagname` varchar(30) NOT NULL DEFAULT '',
+  `timeset` smallint(6) NOT NULL DEFAULT '0',
+  `starttime` int(10) unsigned NOT NULL DEFAULT '0',
+  `endtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `normbody` text,
+  `expbody` text,
+  PRIMARY KEY (`aid`),
+  KEY `tagname` (`tagname`,`typeid`,`timeset`,`endtime`,`starttime`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_nic_ratings`;
+
+CREATE TABLE `dede_nic_ratings` (
+  `id` varchar(11) NOT NULL DEFAULT '',
+  `total_votes` int(11) NOT NULL DEFAULT '0',
+  `total_value` int(11) NOT NULL DEFAULT '0',
+  `star_votes` int(10) NOT NULL DEFAULT '0',
+  `star_value` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+DROP TABLE IF EXISTS `dede_nic_star_score`;
+
+CREATE TABLE `dede_nic_star_score` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `score` char(3) NOT NULL DEFAULT '50',
+  `ip` varchar(20) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  KEY `aid` (`aid`),
+  KEY `ip` (`ip`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+DROP TABLE IF EXISTS `dede_orders`;
+
+CREATE TABLE `dede_orders` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `mid` mediumint(8) unsigned DEFAULT NULL,
+  `name` char(20) NOT NULL DEFAULT '',
+  `quantity` char(255) NOT NULL,
+  `Address` char(255) NOT NULL DEFAULT '',
+  `tel` char(20) NOT NULL DEFAULT '',
+  `mail` char(255) NOT NULL DEFAULT '',
+  `ok` int(1) NOT NULL,
+  `qq` char(255) NOT NULL DEFAULT '',
+  `Content` char(255) NOT NULL DEFAULT '',
+  `beizhu` char(255) NOT NULL DEFAULT '',
+  `sendtime` int(10) unsigned NOT NULL DEFAULT '0',
+  KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_payment`;
+
+CREATE TABLE `dede_payment` (
+  `id` tinyint(3) unsigned NOT NULL AUTO_INCREMENT,
+  `code` varchar(20) NOT NULL DEFAULT '',
+  `name` varchar(120) NOT NULL DEFAULT '',
+  `fee` varchar(10) NOT NULL DEFAULT '0',
+  `description` text NOT NULL,
+  `rank` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `config` text NOT NULL,
+  `enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `cod` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `online` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `code` (`code`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_pinglog`;
+
+CREATE TABLE `dede_pinglog` (
+  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `uptime` int(11) DEFAULT NULL,
+  `status` tinyint(1) DEFAULT NULL,
+  `tuistatus` int(5) DEFAULT NULL,
+  `remain` int(11) DEFAULT NULL,
+  PRIMARY KEY (`aid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_plugins_config`;
+
+CREATE TABLE `dede_plugins_config` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(60) NOT NULL DEFAULT '',
+  `value` text,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_plus`;
+
+CREATE TABLE `dede_plus` (
+  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `plusname` varchar(30) NOT NULL DEFAULT '',
+  `menustring` varchar(200) NOT NULL DEFAULT '',
+  `mainurl` varchar(50) NOT NULL DEFAULT '',
+  `writer` varchar(30) NOT NULL DEFAULT '',
+  `isshow` smallint(6) NOT NULL DEFAULT '1',
+  `filelist` text,
+  PRIMARY KEY (`aid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_plus_baidusitemap_list`;
+
+CREATE TABLE `dede_plus_baidusitemap_list` (
+  `sid` int(11) NOT NULL AUTO_INCREMENT,
+  `url` varchar(255) NOT NULL DEFAULT '',
+  `type` tinyint(4) NOT NULL,
+  `create_time` int(10) NOT NULL DEFAULT '0',
+  `pagesize` int(11) DEFAULT '0',
+  PRIMARY KEY (`sid`),
+  KEY `pagesize` (`pagesize`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_plus_baidusitemap_setting`;
+
+CREATE TABLE `dede_plus_baidusitemap_setting` (
+  `skey` varchar(255) NOT NULL DEFAULT '',
+  `svalue` text NOT NULL,
+  `stime` int(10) NOT NULL,
+  PRIMARY KEY (`skey`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_plus_changyan_importids`;
+
+CREATE TABLE `dede_plus_changyan_importids` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `aid` int(10) DEFAULT '0',
+  `feedback_id` int(12) DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `feedback_id` (`feedback_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_plus_changyan_insertids`;
+
+CREATE TABLE `dede_plus_changyan_insertids` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `aid` int(10) DEFAULT '0',
+  `comment_id` int(12) DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `comment_id` (`comment_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_plus_changyan_setting`;
+
+CREATE TABLE `dede_plus_changyan_setting` (
+  `skey` varchar(255) NOT NULL DEFAULT '',
+  `svalue` text NOT NULL,
+  `stime` int(10) NOT NULL,
+  PRIMARY KEY (`skey`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_plus_mda_setting`;
+
+CREATE TABLE `dede_plus_mda_setting` (
+  `skey` varchar(255) NOT NULL DEFAULT '',
+  `svalue` text NOT NULL,
+  `stime` int(10) NOT NULL,
+  PRIMARY KEY (`skey`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_plus_seoinfo`;
+
+CREATE TABLE `dede_plus_seoinfo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `create_time` int(11) DEFAULT NULL,
+  `alexa_num` varchar(50) DEFAULT NULL,
+  `alexa_area_num` varchar(50) DEFAULT NULL,
+  `baidu_count` varchar(50) DEFAULT NULL,
+  `sogou_count` varchar(50) DEFAULT NULL,
+  `haosou360_count` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_pms`;
+
+CREATE TABLE `dede_pms` (
+  `pmid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `msgfrom` varchar(15) NOT NULL DEFAULT '',
+  `msgfromid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `msgtoid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `folder` enum('inbox','outbox','track') NOT NULL DEFAULT 'inbox',
+  `new` tinyint(1) NOT NULL DEFAULT '0',
+  `subject` varchar(75) NOT NULL DEFAULT '',
+  `dateline` int(10) unsigned NOT NULL DEFAULT '0',
+  `message` text NOT NULL,
+  `delstatus` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `isadmin` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`pmid`),
+  KEY `msgtoid` (`msgtoid`,`folder`,`dateline`),
+  KEY `msgfromid` (`msgfromid`,`folder`,`dateline`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_press`;
+
+CREATE TABLE `dede_press` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_purview`;
+
+CREATE TABLE `dede_purview` (
+  `mid` mediumint(8) DEFAULT '0',
+  `typeid` smallint(5) DEFAULT '0',
+  `rank` smallint(6) DEFAULT NULL,
+  `pkey` varchar(30) CHARACTER SET latin1 NOT NULL,
+  `pvalue` text NOT NULL,
+  KEY `pkey` (`pkey`) USING BTREE
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_pwd_tmp`;
+
+CREATE TABLE `dede_pwd_tmp` (
+  `mid` mediumint(8) NOT NULL,
+  `membername` char(16) NOT NULL DEFAULT '',
+  `pwd` char(32) NOT NULL DEFAULT '',
+  `mailtime` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`mid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_ratings`;
+
+CREATE TABLE `dede_ratings` (
+  `id` varchar(11) NOT NULL,
+  `total_votes` int(11) NOT NULL DEFAULT '0',
+  `total_value` int(11) NOT NULL DEFAULT '0',
+  `used_ips` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_rpad`;
+
+CREATE TABLE `dede_rpad` (
+  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `tagname` varchar(30) NOT NULL DEFAULT '',
+  `adname` varchar(60) NOT NULL DEFAULT '',
+  `timeset` smallint(6) NOT NULL DEFAULT '0',
+  `starttime` int(10) unsigned NOT NULL DEFAULT '0',
+  `endtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `adtype` varchar(30) NOT NULL DEFAULT '',
+  `normparams` text,
+  `expbody` text,
+  PRIMARY KEY (`aid`),
+  KEY `tagname` (`tagname`,`typeid`,`timeset`,`endtime`,`starttime`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_score2money_logs`;
+
+CREATE TABLE `dede_score2money_logs` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `uid` int(10) unsigned NOT NULL DEFAULT '0',
+  `username` char(32) NOT NULL,
+  `dateline` int(10) unsigned NOT NULL DEFAULT '0',
+  `type` enum('score2money','money2score') NOT NULL DEFAULT 'money2score',
+  `ratio` int(10) NOT NULL DEFAULT '0',
+  `score` int(10) NOT NULL DEFAULT '0',
+  `money` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_scores`;
+
+CREATE TABLE `dede_scores` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `titles` char(15) NOT NULL,
+  `icon` smallint(6) unsigned DEFAULT '0',
+  `integral` int(10) NOT NULL DEFAULT '0',
+  `isdefault` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `integral` (`integral`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_search_cache`;
+
+CREATE TABLE `dede_search_cache` (
+  `hash` char(32) NOT NULL,
+  `lasttime` int(10) unsigned NOT NULL DEFAULT '0',
+  `rsnum` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `ids` mediumtext,
+  PRIMARY KEY (`hash`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_search_keywords`;
+
+CREATE TABLE `dede_search_keywords` (
+  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `keyword` char(30) NOT NULL DEFAULT '',
+  `spwords` char(50) NOT NULL DEFAULT '',
+  `count` mediumint(8) unsigned NOT NULL DEFAULT '1',
+  `result` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `lasttime` int(10) unsigned NOT NULL DEFAULT '0',
+  `channelid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`aid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_search_rule`;
+
+CREATE TABLE `dede_search_rule` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `rulename` varchar(50) DEFAULT ' ',
+  `iscompare` smallint(6) NOT NULL DEFAULT '1',
+  `isuse` smallint(6) NOT NULL DEFAULT '1',
+  `iscache` smallint(6) NOT NULL DEFAULT '0',
+  `exptime` smallint(6) DEFAULT '24',
+  `ruletext` text,
+  `uptime` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_sectors`;
+
+CREATE TABLE `dede_sectors` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL DEFAULT '',
+  `reid` int(10) unsigned NOT NULL DEFAULT '0',
+  `disorder` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_service`;
+
+CREATE TABLE `dede_service` (
+  `id` mediumint(8) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `adress` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `telphone` varchar(255) NOT NULL,
+  `service` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_sgpage`;
+
+CREATE TABLE `dede_sgpage` (
+  `aid` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `ismake` smallint(6) NOT NULL DEFAULT '1',
+  `filename` varchar(60) NOT NULL DEFAULT '',
+  `keywords` varchar(30) NOT NULL DEFAULT '',
+  `template` varchar(30) NOT NULL DEFAULT '',
+  `likeid` varchar(20) NOT NULL DEFAULT '',
+  `description` varchar(250) NOT NULL DEFAULT '',
+  `uptime` int(10) unsigned NOT NULL DEFAULT '0',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `ismake` (`ismake`,`uptime`),
+  KEY `likeid` (`likeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_shangjia`;
+
+CREATE TABLE `dede_shangjia` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `sjtype` enum('淘宝店','拍拍店','独立网站') DEFAULT NULL,
+  `paytype` enum('按成交付费','按点击付费','包月广告') DEFAULT NULL,
+  `xiangmu` enum('男女服装','鞋包','配饰','母婴用品','美容美体','数码家电','家居建材','美食特产','个性创意','书籍文化','汽车用品','其它') DEFAULT NULL,
+  `body` mediumtext,
+  `shopurl` char(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_shops_delivery`;
+
+CREATE TABLE `dede_shops_delivery` (
+  `pid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `dname` char(80) NOT NULL,
+  `price` float(13,2) NOT NULL DEFAULT '0.00',
+  `des` char(255) DEFAULT NULL,
+  `orders` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`pid`),
+  KEY `orders` (`orders`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_shops_orders`;
+
+CREATE TABLE `dede_shops_orders` (
+  `oid` varchar(80) NOT NULL,
+  `userid` int(10) NOT NULL,
+  `pid` int(10) NOT NULL DEFAULT '0',
+  `paytype` tinyint(2) NOT NULL DEFAULT '1',
+  `cartcount` int(10) NOT NULL DEFAULT '0',
+  `dprice` float(13,2) NOT NULL DEFAULT '0.00',
+  `price` float(13,2) NOT NULL DEFAULT '0.00',
+  `priceCount` float(13,2) NOT NULL,
+  `state` tinyint(1) NOT NULL DEFAULT '0',
+  `ip` char(15) NOT NULL DEFAULT '',
+  `stime` int(10) NOT NULL DEFAULT '0',
+  KEY `stime` (`stime`),
+  KEY `userid` (`userid`),
+  KEY `oid` (`oid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_shops_paytype`;
+
+CREATE TABLE `dede_shops_paytype` (
+  `pid` int(10) NOT NULL AUTO_INCREMENT,
+  `paytype` varchar(20) NOT NULL,
+  `des` text,
+  PRIMARY KEY (`pid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_shops_products`;
+
+CREATE TABLE `dede_shops_products` (
+  `aid` mediumint(8) NOT NULL DEFAULT '0',
+  `oid` varchar(80) NOT NULL DEFAULT '',
+  `userid` int(10) NOT NULL,
+  `title` varchar(80) NOT NULL DEFAULT '',
+  `price` float(13,2) NOT NULL DEFAULT '0.00',
+  `buynum` int(10) NOT NULL DEFAULT '9',
+  KEY `oid` (`oid`),
+  KEY `userid` (`userid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_shops_userinfo`;
+
+CREATE TABLE `dede_shops_userinfo` (
+  `userid` int(10) NOT NULL,
+  `oid` varchar(80) NOT NULL DEFAULT '',
+  `consignee` char(15) NOT NULL DEFAULT '',
+  `address` varchar(255) NOT NULL DEFAULT '',
+  `zip` int(10) NOT NULL DEFAULT '0',
+  `tel` varchar(255) NOT NULL DEFAULT '',
+  `email` varchar(255) NOT NULL DEFAULT '',
+  `des` varchar(255) NOT NULL DEFAULT '',
+  KEY `oid` (`oid`),
+  KEY `userid` (`userid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_smalltypes`;
+
+CREATE TABLE `dede_smalltypes` (
+  `id` smallint(6) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT '0',
+  `disorder` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `description` varchar(255) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_softconfig`;
+
+CREATE TABLE `dede_softconfig` (
+  `downtype` smallint(6) NOT NULL DEFAULT '0',
+  `ismoresite` smallint(6) NOT NULL DEFAULT '0',
+  `gotojump` smallint(6) NOT NULL DEFAULT '0',
+  `islocal` smallint(5) unsigned NOT NULL DEFAULT '1',
+  `sites` text,
+  `downmsg` text,
+  `moresitedo` smallint(5) unsigned NOT NULL DEFAULT '1',
+  `dfrank` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `dfywboy` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `argrange` smallint(5) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`downtype`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_sphinx`;
+
+CREATE TABLE `dede_sphinx` (
+  `countid` int(11) unsigned NOT NULL,
+  `maxaid` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`countid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_stepselect`;
+
+CREATE TABLE `dede_stepselect` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `itemname` char(30) DEFAULT NULL,
+  `egroup` char(20) DEFAULT NULL,
+  `issign` tinyint(1) unsigned DEFAULT '0',
+  `issystem` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_store_groups`;
+
+CREATE TABLE `dede_store_groups` (
+  `storeid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `storename` char(20) NOT NULL DEFAULT '',
+  `tops` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `orders` smallint(6) unsigned NOT NULL DEFAULT '0',
+  `nums` int(13) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`storeid`),
+  KEY `orders` (`orders`,`tops`),
+  KEY `nums` (`nums`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_story_books`;
+
+CREATE TABLE `dede_story_books` (
+  `bid` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `catid` smallint(6) DEFAULT '0',
+  `bcatid` smallint(6) NOT NULL DEFAULT '0',
+  `ischeck` smallint(6) NOT NULL DEFAULT '1',
+  `status` tinyint(1) NOT NULL DEFAULT '0',
+  `booktype` smallint(6) NOT NULL DEFAULT '0',
+  `iscommend` smallint(6) NOT NULL DEFAULT '0',
+  `click` int(11) unsigned NOT NULL DEFAULT '0',
+  `freenum` smallint(6) NOT NULL DEFAULT '0',
+  `bookname` varchar(40) NOT NULL DEFAULT '',
+  `author` varchar(30) NOT NULL DEFAULT '',
+  `mid` int(11) unsigned NOT NULL DEFAULT '0',
+  `adminid` int(11) NOT NULL DEFAULT '0',
+  `litpic` varchar(100) NOT NULL DEFAULT '',
+  `pubdate` int(11) NOT NULL DEFAULT '0',
+  `lastpost` int(11) NOT NULL DEFAULT '0',
+  `postnum` int(11) NOT NULL DEFAULT '0',
+  `lastfeedback` int(11) NOT NULL DEFAULT '0',
+  `feedbacknum` int(11) NOT NULL DEFAULT '0',
+  `weekcc` int(11) NOT NULL DEFAULT '0',
+  `monthcc` int(11) NOT NULL DEFAULT '0',
+  `weekup` int(11) NOT NULL DEFAULT '0',
+  `monthup` int(11) NOT NULL DEFAULT '0',
+  `description` varchar(250) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  `keywords` varchar(60) NOT NULL DEFAULT '',
+  `userip` varchar(20) NOT NULL DEFAULT '',
+  `senddate` int(11) NOT NULL DEFAULT '0',
+  `arcrank` smallint(6) DEFAULT '0',
+  `goodpost` varchar(60) NOT NULL DEFAULT '',
+  `badpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `notpost` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`bid`),
+  KEY `catid` (`catid`,`bcatid`,`ischeck`),
+  KEY `click` (`click`,`weekcc`,`monthcc`,`weekup`,`monthup`),
+  KEY `booktype` (`booktype`,`iscommend`,`freenum`,`bookname`,`mid`,`litpic`,`pubdate`,`lastpost`,`postnum`,`senddate`,`adminid`,`author`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_story_bookstars`;
+
+CREATE TABLE `dede_story_bookstars` (
+  `bid` varchar(11) NOT NULL,
+  `totalvotes` int(11) NOT NULL DEFAULT '0',
+  `totalvalue` int(11) NOT NULL DEFAULT '0',
+  `voteinfo` longtext,
+  `usedids` longtext,
+  PRIMARY KEY (`bid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_story_catalog`;
+
+CREATE TABLE `dede_story_catalog` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `classname` varchar(30) NOT NULL DEFAULT '',
+  `pid` int(11) NOT NULL DEFAULT '0',
+  `rank` smallint(6) NOT NULL DEFAULT '0',
+  `listrule` varchar(30) NOT NULL DEFAULT '',
+  `viewrule` varchar(30) NOT NULL DEFAULT '',
+  `booktype` smallint(6) NOT NULL DEFAULT '0',
+  `keywords` varchar(50) NOT NULL DEFAULT '',
+  `description` varchar(200) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  KEY `classname` (`classname`,`pid`,`rank`,`booktype`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_story_chapter`;
+
+CREATE TABLE `dede_story_chapter` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `bookid` int(11) NOT NULL DEFAULT '0',
+  `catid` int(11) NOT NULL DEFAULT '0',
+  `chapnum` smallint(6) NOT NULL DEFAULT '1',
+  `postnum` smallint(6) NOT NULL DEFAULT '0',
+  `mid` int(11) NOT NULL DEFAULT '0',
+  `chaptername` varchar(40) NOT NULL DEFAULT '',
+  `bookname` varchar(40) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_story_content`;
+
+CREATE TABLE `dede_story_content` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(40) NOT NULL DEFAULT '0',
+  `bookname` varchar(40) NOT NULL DEFAULT '',
+  `chapterid` int(11) NOT NULL DEFAULT '0',
+  `bookid` int(11) NOT NULL DEFAULT '0',
+  `catid` smallint(6) NOT NULL DEFAULT '0',
+  `bcatid` smallint(6) NOT NULL DEFAULT '0',
+  `booktype` int(11) NOT NULL DEFAULT '0',
+  `mid` int(11) NOT NULL DEFAULT '0',
+  `adminid` smallint(6) NOT NULL DEFAULT '0',
+  `addtime` int(11) NOT NULL DEFAULT '0',
+  `sortid` smallint(6) NOT NULL DEFAULT '0',
+  `sortbook` smallint(6) NOT NULL DEFAULT '0',
+  `ischeck` smallint(6) NOT NULL DEFAULT '1',
+  `bigpic` varchar(80) NOT NULL DEFAULT '',
+  `body` mediumtext NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `title` (`sortbook`,`chapterid`,`bookid`,`catid`,`bcatid`,`mid`,`adminid`,`addtime`,`ischeck`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_story_viphistory`;
+
+CREATE TABLE `dede_story_viphistory` (
+  `cid` int(11) NOT NULL DEFAULT '0',
+  `mid` int(11) NOT NULL DEFAULT '0'
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_sys_enum`;
+
+CREATE TABLE `dede_sys_enum` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `ename` char(30) NOT NULL DEFAULT '',
+  `evalue` char(20) NOT NULL DEFAULT '0',
+  `egroup` char(20) NOT NULL DEFAULT '',
+  `disorder` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `issign` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_sys_module`;
+
+CREATE TABLE `dede_sys_module` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `hashcode` char(32) NOT NULL DEFAULT '',
+  `modname` varchar(30) NOT NULL DEFAULT '',
+  `indexname` varchar(20) NOT NULL DEFAULT '',
+  `indexurl` varchar(30) NOT NULL DEFAULT '',
+  `ismember` tinyint(4) NOT NULL DEFAULT '1',
+  `menustring` text,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_sys_set`;
+
+CREATE TABLE `dede_sys_set` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `sname` char(20) NOT NULL DEFAULT '',
+  `items` text,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_sys_task`;
+
+CREATE TABLE `dede_sys_task` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `taskname` varchar(50) NOT NULL,
+  `dourl` varchar(100) NOT NULL,
+  `islock` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `runtype` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `runtime` varchar(10) DEFAULT '0000',
+  `starttime` int(10) unsigned NOT NULL DEFAULT '0',
+  `endtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `freq` tinyint(2) unsigned NOT NULL DEFAULT '0',
+  `lastrun` int(10) unsigned NOT NULL DEFAULT '0',
+  `description` varchar(250) NOT NULL,
+  `parameter` text,
+  `settime` int(10) unsigned NOT NULL DEFAULT '0',
+  `sta` enum('运行','成功','失败') DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_sysconfig`;
+
+CREATE TABLE `dede_sysconfig` (
+  `aid` smallint(8) unsigned NOT NULL DEFAULT '0',
+  `varname` varchar(20) NOT NULL DEFAULT '',
+  `info` varchar(100) NOT NULL DEFAULT '',
+  `groupid` smallint(6) NOT NULL DEFAULT '1',
+  `type` varchar(10) NOT NULL DEFAULT 'string',
+  `value` text,
+  PRIMARY KEY (`varname`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_syspassport`;
+
+CREATE TABLE `dede_syspassport` (
+  `varname` varchar(30) NOT NULL DEFAULT '0',
+  `value` varchar(100) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`varname`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_tag_index`;
+
+CREATE TABLE `dede_tag_index` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `tagname` varchar(30) DEFAULT NULL,
+  `count` int(11) NOT NULL DEFAULT '0',
+  `result` int(11) NOT NULL DEFAULT '0',
+  `weekcc` int(11) NOT NULL DEFAULT '0',
+  `monthcc` int(11) NOT NULL DEFAULT '0',
+  `monthup` int(11) NOT NULL DEFAULT '0',
+  `weekup` int(11) NOT NULL DEFAULT '0',
+  `addtime` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_tag_list`;
+
+CREATE TABLE `dede_tag_list` (
+  `tid` int(11) NOT NULL DEFAULT '0',
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` smallint(6) DEFAULT '0',
+  `arcrank` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`tid`,`aid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_tagindex`;
+
+CREATE TABLE `dede_tagindex` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `tag` char(12) NOT NULL DEFAULT '',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `count` int(10) unsigned NOT NULL DEFAULT '0',
+  `total` int(10) unsigned NOT NULL DEFAULT '0',
+  `weekcc` int(10) unsigned NOT NULL DEFAULT '0',
+  `monthcc` int(10) unsigned NOT NULL DEFAULT '0',
+  `weekup` int(10) unsigned NOT NULL DEFAULT '0',
+  `monthup` int(10) unsigned NOT NULL DEFAULT '0',
+  `addtime` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_taglist`;
+
+CREATE TABLE `dede_taglist` (
+  `tid` int(10) unsigned NOT NULL DEFAULT '0',
+  `aid` int(10) unsigned NOT NULL DEFAULT '0',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `tag` varchar(12) NOT NULL DEFAULT '',
+  PRIMARY KEY (`tid`,`aid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_taoke_auction`;
+
+CREATE TABLE `dede_taoke_auction` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `channel` smallint(6) NOT NULL DEFAULT '0',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `click` int(10) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `senddate` int(11) NOT NULL DEFAULT '0',
+  `flag` set('c','h','p','f','s','j','a','b') DEFAULT NULL,
+  `litpic` varchar(120) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `lastpost` int(10) unsigned NOT NULL DEFAULT '0',
+  `scores` mediumint(8) NOT NULL DEFAULT '0',
+  `goodpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `badpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `cmoney` float NOT NULL DEFAULT '0',
+  `cratepercent` float NOT NULL DEFAULT '0',
+  `scratepercent` float NOT NULL DEFAULT '0',
+  `mmid` varchar(250) NOT NULL DEFAULT '',
+  `usernumberid` int(11) NOT NULL DEFAULT '0',
+  `nick` varchar(250) NOT NULL DEFAULT '',
+  `location` varchar(250) NOT NULL DEFAULT '',
+  `reservepricemoney` float NOT NULL DEFAULT '0',
+  `auction_url` varchar(250) NOT NULL DEFAULT '',
+  `auctionid` int(11) NOT NULL DEFAULT '0',
+  `shop_url` varchar(250) NOT NULL DEFAULT '',
+  `exturl` varchar(250) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  `dbid` varchar(250) NOT NULL DEFAULT '',
+  `slevel` varchar(250) NOT NULL DEFAULT '',
+  `sid` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_taoke_setting`;
+
+CREATE TABLE `dede_taoke_setting` (
+  `id` int(8) NOT NULL AUTO_INCREMENT,
+  `appkey` varchar(40) DEFAULT NULL,
+  `appsecret` text,
+  `pid` varchar(40) DEFAULT NULL,
+  `tid` varchar(20) DEFAULT NULL,
+  `tmp` varchar(20) DEFAULT NULL,
+  `vname` varchar(60) DEFAULT NULL,
+  `ismake` int(8) NOT NULL,
+  `locurl` int(8) NOT NULL,
+  `iscpic` int(8) NOT NULL,
+  `isstat` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_taoke_shop`;
+
+CREATE TABLE `dede_taoke_shop` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `channel` smallint(6) NOT NULL DEFAULT '0',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `click` int(10) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `senddate` int(11) NOT NULL DEFAULT '0',
+  `flag` set('c','h','p','f','s','j','a','b') DEFAULT NULL,
+  `litpic` varchar(120) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `lastpost` int(10) unsigned NOT NULL DEFAULT '0',
+  `scores` mediumint(8) NOT NULL DEFAULT '0',
+  `goodpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `badpost` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `memberid` int(11) NOT NULL DEFAULT '0',
+  `shopurl` varchar(250) NOT NULL DEFAULT 'http://',
+  `contact` varchar(250) NOT NULL DEFAULT '',
+  `picturl` varchar(250) NOT NULL DEFAULT '',
+  `maxcommissionrate` float NOT NULL DEFAULT '0',
+  `mincommissionrate` float NOT NULL DEFAULT '0',
+  `exlevel` int(11) NOT NULL DEFAULT '0',
+  `auctioncount` int(11) NOT NULL DEFAULT '0',
+  `orimemberid` int(11) NOT NULL DEFAULT '0',
+  `exturl` varchar(250) NOT NULL DEFAULT '',
+  `catname` varchar(250) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_taokecate`;
+
+CREATE TABLE `dede_taokecate` (
+  `id` int(8) NOT NULL AUTO_INCREMENT,
+  `categroy` int(20) DEFAULT NULL,
+  `sort` varchar(40) DEFAULT NULL,
+  `num` int(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_taokepage`;
+
+CREATE TABLE `dede_taokepage` (
+  `id` mediumint(8) NOT NULL AUTO_INCREMENT,
+  `title` varchar(40) DEFAULT NULL,
+  `keywords` text,
+  `des` text,
+  `shoptype` mediumint(4) DEFAULT NULL,
+  `categroy` int(40) DEFAULT NULL,
+  `apikeyword` varchar(255) DEFAULT NULL,
+  `pageurl` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_taokepro`;
+
+CREATE TABLE `dede_taokepro` (
+  `id` int(8) NOT NULL AUTO_INCREMENT,
+  `cid` int(10) DEFAULT NULL,
+  `body` text,
+  `is_api` mediumint(2) DEFAULT NULL,
+  `volume` int(20) DEFAULT NULL,
+  `sortrank` mediumint(2) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_taokeurl`;
+
+CREATE TABLE `dede_taokeurl` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(254) CHARACTER SET gb2312 NOT NULL,
+  `click_url` text CHARACTER SET gb2312 NOT NULL,
+  `num` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_taokeurlinfos`;
+
+CREATE TABLE `dede_taokeurlinfos` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `tid` int(10) NOT NULL,
+  `area` varchar(50) CHARACTER SET gb2312 NOT NULL,
+  `ip` varchar(50) NOT NULL,
+  `clicktime` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_task`;
+
+CREATE TABLE `dede_task` (
+  `id` smallint(6) NOT NULL DEFAULT '1',
+  `usermtools` smallint(6) NOT NULL DEFAULT '1',
+  `rmpwd` varchar(32) NOT NULL,
+  `tasks` varchar(100) NOT NULL,
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `startid` int(11) NOT NULL DEFAULT '0',
+  `endid` int(11) NOT NULL DEFAULT '0',
+  `nodes` varchar(250) NOT NULL,
+  `dotime` varchar(10) DEFAULT '00:00:00',
+  `degree` varchar(10) NOT NULL,
+  UNIQUE KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_uploads`;
+
+CREATE TABLE `dede_uploads` (
+  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `arcid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `title` char(60) NOT NULL DEFAULT '',
+  `url` char(80) NOT NULL DEFAULT '',
+  `mediatype` smallint(6) NOT NULL DEFAULT '1',
+  `width` char(10) NOT NULL DEFAULT '',
+  `height` char(10) NOT NULL DEFAULT '',
+  `playtime` char(10) NOT NULL DEFAULT '',
+  `filesize` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `uptime` int(10) unsigned NOT NULL DEFAULT '0',
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`aid`),
+  KEY `memberid` (`mid`),
+  KEY `arcid` (`arcid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_v`;
+
+CREATE TABLE `dede_v` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `urls` varchar(250) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_verifies`;
+
+CREATE TABLE `dede_verifies` (
+  `nameid` char(32) NOT NULL DEFAULT '',
+  `cthash` varchar(32) NOT NULL DEFAULT '',
+  `method` enum('local','official') NOT NULL DEFAULT 'official',
+  `filename` varchar(254) NOT NULL DEFAULT '',
+  PRIMARY KEY (`nameid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_vote`;
+
+CREATE TABLE `dede_vote` (
+  `aid` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `votename` varchar(50) NOT NULL DEFAULT '',
+  `starttime` int(10) unsigned NOT NULL DEFAULT '0',
+  `endtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `totalcount` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `ismore` tinyint(6) NOT NULL DEFAULT '0',
+  `isallow` tinyint(6) NOT NULL DEFAULT '0',
+  `view` tinyint(6) NOT NULL DEFAULT '0',
+  `spec` int(20) unsigned NOT NULL DEFAULT '0',
+  `isenable` tinyint(6) NOT NULL DEFAULT '0',
+  `votenote` text,
+  PRIMARY KEY (`aid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_vote_member`;
+
+CREATE TABLE `dede_vote_member` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `voteid` int(10) unsigned NOT NULL DEFAULT '0',
+  `userid` varchar(50) NOT NULL DEFAULT '',
+  `uptime` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_vote_option`;
+
+CREATE TABLE `dede_vote_option` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `visible` smallint(6) NOT NULL,
+  `addtime` int(11) NOT NULL,
+  `order` int(11) NOT NULL DEFAULT '0',
+  `info` mediumtext,
+  `subjectid` int(11) NOT NULL,
+  `litpic` varchar(255) DEFAULT NULL,
+  `votes` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `order` (`order`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_vote_replies`;
+
+CREATE TABLE `dede_vote_replies` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `subjectid` int(11) unsigned NOT NULL DEFAULT '0',
+  `optionid` int(11) NOT NULL,
+  `uid` int(11) NOT NULL,
+  `content` mediumtext NOT NULL,
+  `addtime` int(11) NOT NULL DEFAULT '0',
+  `ip` varchar(15) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `TopicID` (`subjectid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_vote_subject`;
+
+CREATE TABLE `dede_vote_subject` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL,
+  `param` varchar(50) NOT NULL,
+  `maxvotes` smallint(3) NOT NULL DEFAULT '1',
+  `templatedir` varchar(255) DEFAULT NULL,
+  `visible` smallint(6) NOT NULL,
+  `needlogin` tinyint(2) NOT NULL DEFAULT '1',
+  `addtime` int(11) NOT NULL,
+  `starttime` int(11) NOT NULL,
+  `endtime` int(11) NOT NULL,
+  `info` mediumtext NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `param` (`param`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_vote_votes`;
+
+CREATE TABLE `dede_vote_votes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `uid` int(11) NOT NULL,
+  `ip` varchar(20) NOT NULL,
+  `addtime` int(11) NOT NULL,
+  `optionid` int(11) NOT NULL,
+  `subjectid` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_website`;
+
+CREATE TABLE `dede_website` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `body` mediumtext NOT NULL,
+  `grank` int(11) NOT NULL DEFAULT '0',
+  `brank` int(11) NOT NULL DEFAULT '0',
+  `srank` int(11) NOT NULL DEFAULT '0',
+  `arank` int(11) NOT NULL DEFAULT '0',
+  `weburl` char(100) NOT NULL DEFAULT '',
+  `inclick` int(11) NOT NULL DEFAULT '0',
+  `outclick` int(11) NOT NULL DEFAULT '0',
+  `outtime` int(11) NOT NULL DEFAULT '0',
+  `intime` int(11) NOT NULL DEFAULT '0',
+  `islink` smallint(6) NOT NULL DEFAULT '-1',
+  `uppic` smallint(6) NOT NULL DEFAULT '-1',
+  `fksex` enum('男性','女性') DEFAULT NULL,
+  `adprice` enum('1-100','100-200','200-300','300-500','500-800','800-1000','1000以上') DEFAULT NULL,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_webtagindex`;
+
+CREATE TABLE `dede_webtagindex` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `tag` char(100) NOT NULL DEFAULT '',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `total` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_webtaglist`;
+
+CREATE TABLE `dede_webtaglist` (
+  `tid` int(10) unsigned NOT NULL DEFAULT '0',
+  `aid` int(10) unsigned NOT NULL DEFAULT '0',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `typeid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `tag` varchar(100) NOT NULL DEFAULT '',
+  PRIMARY KEY (`tid`,`aid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_xm`;
+
+CREATE TABLE `dede_xm` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_yue`;
+
+CREATE TABLE `dede_yue` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `redirecturl` varchar(255) NOT NULL DEFAULT '',
+  `templet` varchar(30) NOT NULL DEFAULT '',
+  `userip` char(15) NOT NULL DEFAULT '',
+  `nianlin` int(11) NOT NULL DEFAULT '0',
+  `xinbie` enum('男','女') DEFAULT NULL,
+  `keshi` enum('关节病科','骨坏死科','颈椎腰椎科','骨伤科','康复理疗科','综合科室') DEFAULT NULL,
+  `time` varchar(250) NOT NULL DEFAULT '',
+  `tel` varchar(250) NOT NULL DEFAULT '',
+  `qq` varchar(250) NOT NULL DEFAULT '',
+  `dizhi` varchar(250) NOT NULL DEFAULT '',
+  `zenzuang` mediumtext,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+
+DROP TABLE IF EXISTS `dede_yuyue`;
+
+CREATE TABLE `dede_yuyue` (
+  `id` int(50) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `sex` varchar(3) NOT NULL,
+  `age` varchar(15) NOT NULL,
+  `date` date NOT NULL,
+  `time` varchar(10) NOT NULL,
+  `address` varchar(80) NOT NULL,
+  `hometel` varchar(15) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `ill` text NOT NULL,
+  `state` int(1) NOT NULL DEFAULT '0',
+  `ip` varchar(40) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `dede_zufang`;
+
+CREATE TABLE `dede_zufang` (
+  `aid` int(11) NOT NULL DEFAULT '0',
+  `typeid` int(11) NOT NULL DEFAULT '0',
+  `channel` smallint(6) NOT NULL DEFAULT '0',
+  `arcrank` smallint(6) NOT NULL DEFAULT '0',
+  `mid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `click` int(10) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(60) NOT NULL DEFAULT '',
+  `senddate` int(11) NOT NULL DEFAULT '0',
+  `flag` set('c','h','p','f','s','j','a','b') DEFAULT NULL,
+  `litpic` varchar(60) NOT NULL DEFAULT '',
+  `userip` varchar(15) NOT NULL DEFAULT '',
+  `lastpost` int(11) NOT NULL DEFAULT '0',
+  `scores` int(11) NOT NULL DEFAULT '0',
+  `goodpost` int(11) NOT NULL DEFAULT '0',
+  `badpost` int(11) NOT NULL DEFAULT '0',
+  `xzqy` char(20) NOT NULL DEFAULT '0',
+  `huxing` enum('一室','二室','三室','四室','五室','五室以上') DEFAULT NULL,
+  `leixing` enum('多层住宅','小高层住宅','高层住宅','民房排屋','公寓','酒店式公寓','商住楼','写字楼','别墅','商铺','其他') DEFAULT NULL,
+  `jtjiage` varchar(250) NOT NULL DEFAULT '',
+  `jtmianji` varchar(250) NOT NULL DEFAULT '',
+  `linkman` varchar(50) NOT NULL DEFAULT '',
+  `tel` varchar(50) NOT NULL DEFAULT '',
+  `email` varchar(50) NOT NULL DEFAULT '',
+  `address` varchar(100) NOT NULL DEFAULT '',
+  `body` mediumtext,
+  `louceng` varchar(25) NOT NULL DEFAULT '',
+  `czfs` enum('整套出租','单间出租') DEFAULT NULL,
+  `zfxqmc` varchar(250) NOT NULL DEFAULT '',
+  `zfzffs` char(20) NOT NULL DEFAULT '0',
+  `zxqk` char(20) NOT NULL DEFAULT '0',
+  `zffwpz` set('床','热水器','空调','洗衣机','冰箱','电视','宽带','沙发','衣橱','桌子','电梯','车位') DEFAULT NULL,
+  PRIMARY KEY (`aid`),
+  KEY `typeid` (`typeid`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+

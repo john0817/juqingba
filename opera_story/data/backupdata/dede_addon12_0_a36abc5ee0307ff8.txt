@@ -1,0 +1,2 @@
+INSERT INTO `dede_addon12` VALUES('24','35','','','127.0.0.1','','');
+INSERT INTO `dede_addon12` VALUES('25','35','','','127.0.0.1','','');

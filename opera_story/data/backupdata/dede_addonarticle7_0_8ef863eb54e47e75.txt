@@ -1,0 +1,1 @@
+INSERT INTO `dede_addonarticle7` VALUES('2','14','车间通道','','','127.0.0.1');

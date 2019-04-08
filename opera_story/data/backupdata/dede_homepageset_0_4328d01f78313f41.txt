@@ -1,0 +1,1 @@
+INSERT INTO `dede_homepageset` VALUES('juqing/index.htm','../index.html','0');

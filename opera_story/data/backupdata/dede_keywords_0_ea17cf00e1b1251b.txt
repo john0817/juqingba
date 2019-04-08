@@ -1,0 +1,1 @@
+INSERT INTO `dede_keywords` VALUES('1','ท๖าก','30','1','www.baidu.com');

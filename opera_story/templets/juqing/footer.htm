@@ -1,0 +1,21 @@
+<div class="Footer">
+    <!--<p>-->
+        <!--<a href="http://www.juqingba.cn/gyjqb.html">关于剧情吧</a> - -->
+        <!--<a href="http://www.juqingba.cn/mzsm.html">免责声明</a> - -->
+        <!--<a href="http://www.juqingba.cn/lxwm.html">联系我们</a>-->
+    <!--</p>-->
+    <p>
+        {dede:global.cfg_description/}<br>
+        {dede:global.cfg_bq/} <br>
+        {dede:global.cfg_beian/}
+    </p>
+</div>
+<script>
+    $('.arcurl').on('click','a,p,img',function (e) {
+        var arcurl = $(e.target).attr('arcurl').split('/');
+        arcurl.pop();
+        arcurl.push('juqingjieshao/');
+        arcurl = arcurl.join('/');
+        location.href = arcurl;
+    });
+</script>

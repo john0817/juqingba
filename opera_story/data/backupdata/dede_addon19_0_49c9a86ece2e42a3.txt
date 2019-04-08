@@ -1,0 +1,1 @@
+INSERT INTO `dede_addon19` VALUES('6','15','','','127.0.0.1','<span style=\"color: rgb(68, 68, 68); font-family: SimSun; font-size: 14px; line-height: 30px;\">从维多利亚（1840s）到复古时期（1940s），古董珠宝设计走过百年辉煌史。值此「AZIC薾雅」开幕之际，特别制作了此视频，用作品诠释变迁，回顾令人惊叹的艺术轨迹。</span>','http://www.tudou.com/v/P2PzAHSBwpE/&amp;rpid=728446432&amp;resourceId=728446432_04_05_99/v.swf');

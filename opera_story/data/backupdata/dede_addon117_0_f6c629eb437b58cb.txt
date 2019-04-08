@@ -1,0 +1,5 @@
+INSERT INTO `dede_addon117` VALUES('19','13','','','127.0.0.1','{dede:img text=\'\' width=\'970\' height=\'410\'} /uploads/150629/1-150629114042394.jpg {/dede:img}');
+INSERT INTO `dede_addon117` VALUES('20','13','','','127.0.0.1','{dede:img text=\'\' width=\'970\' height=\'410\'} /uploads/150629/1-150629121535K6.jpg {/dede:img}');
+INSERT INTO `dede_addon117` VALUES('21','13','','','127.0.0.1','{dede:img text=\'\' width=\'970\' height=\'410\'} /uploads/150629/1-150629121520433.jpg {/dede:img}');
+INSERT INTO `dede_addon117` VALUES('22','13','','','127.0.0.1','{dede:img text=\'\' width=\'970\' height=\'410\'} /uploads/150629/1-150629121556115.jpg {/dede:img}');
+INSERT INTO `dede_addon117` VALUES('23','13','','','127.0.0.1','{dede:img text=\'\' width=\'970\' height=\'410\'} /uploads/150629/1-150629121612L8.jpg {/dede:img}');

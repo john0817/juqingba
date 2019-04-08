@@ -1,0 +1,1 @@
+<a href="[field:arcurl/]">[field:body/]</a><br />

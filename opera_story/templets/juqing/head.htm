@@ -1,0 +1,42 @@
+<div class="Head">
+    <div class="Head_Box">
+        <div class="Logo FL">
+            <h1>
+                <a href="{dede:global.cfg_basehost/}">
+                    <img src="{dede:global.cfg_templets_skin/}/images/logo.gif" alt="剧情吧">
+                </a>
+            </h1>
+        </div>
+        <div class="Search FL">
+            <form action="{dede:global.cfg_cmsurl/}/plus/search.php" name="formsearch">
+                <!--<input type="hidden" name="s" value="16222469342352598956">-->
+                <!--<input type="hidden" name="ie" value="gbk">-->
+                <!--<input autocomplete="off" name="q" type="text" class="search-keyword FL" id="search-keyword" value="请在此处出入电视剧名称或电影名称" onfocus="if(this.value=='请在此处出入电视剧名称或电影名称'){this.value='';}" onblur="if(this.value==''){this.value='请在此处出入电视剧名称或电影名称';}">-->
+                <!--<input type="hidden" name="kwtype" value="0" />-->
+                <input name="q" type="text" class="search-keyword FL" id="search-keyword" value="请在此处出入电视剧名称或电影名称" onfocus="if(this.value=='请在此处出入电视剧名称或电影名称'){this.value='';}"  onblur="if(this.value==''){this.value='请在此处出入电视剧名称或电影名称';}" />
+                <button type="submit" class="search-submit FL"></button>
+            </form>
+            <p>
+                <strong>搜索：</strong>
+                <!--<a href="http://www.juqingba.cn/zjuqing/65153.html">扶摇</a>-->
+                <!--{dede:hotwords num='7' maxlength='12' subday='365'/}-->
+                {dede:tag row='10' getall='1' sort='month'}
+                <a href='[field:link/]'>[field:tag /]</a>
+                {/dede:tag}
+            </p>
+        </div>
+        <div class="Info FR">
+            <a href="" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{dede:global.cfg_basehost/}');">设为首页</a>
+            <br>
+            <a href="javascript:window.external.AddFavorite('{dede:global.cfg_basehost/}','剧情吧—最新电视剧分集剧情介绍,剧情介绍网')">收藏本站</a>
+        </div>
+    </div>
+</div>
+<div class="Nav1">
+    <ul>
+        <li><a href="{dede:global.cfg_basehost/}">首页</a></li>
+        {dede:channel    row='10'    type ='top'}
+        <li><a href="[field:typelink/]">[field:typename/]</a></li>
+        {/dede:channel}
+    </ul>
+</div>

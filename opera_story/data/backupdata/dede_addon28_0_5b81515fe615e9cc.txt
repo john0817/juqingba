@@ -1,0 +1,2 @@
+INSERT INTO `dede_addon28` VALUES('82','38','','','221.239.133.65','<img alt=\"\" src=\"/uploads/allimg/130420/1-130420192IUW.jpg\" style=\"width: 882px; height: 1059px;\" /><br />\r\n<br />\r\n');
+INSERT INTO `dede_addon28` VALUES('83','40','','','221.239.133.65','<img alt=\"\" src=\"/uploads/allimg/130420/1-130420193031539.jpg\" /><br />\r\n');

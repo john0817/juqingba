@@ -1,0 +1,3 @@
+INSERT INTO `dede_service` VALUES('1','张三','西湖区','张三','13020036738','2501');
+INSERT INTO `dede_service` VALUES('2','李四','上城区','史锦义','18636235586','2501');
+INSERT INTO `dede_service` VALUES('3','王二','下城区','金辉','13777494803','2501');

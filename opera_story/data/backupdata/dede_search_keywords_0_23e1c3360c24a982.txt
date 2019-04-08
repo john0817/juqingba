@@ -1,0 +1,2 @@
+INSERT INTO `dede_search_keywords` VALUES('1','春暖','春暖','2','0','1552700729','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','花开','花开','1','0','1552700739','0','0');
